@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<form method="post">
+    {{form.hidden_tag()}}
+    {{form.item.label}}{{form.item()}}
+    {{form.size.label}}{{form.size()}}
+    {{form.unit.label}}{{form.unit()}}
+    {{form.packaging.label}}{{form.packaging()}}
+    {{form.submit()}}
+</form>
+</body>
+</html>
