@@ -5,10 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-<ul>
+<table>
+    <tr>
+        <td>Item Name</td>
+        <td>Item Measurement</td>
+        <td>Item Packaging</td>
+    </tr>
 {% for item in items%}
-    <li>item</li>
+    <tr>
+        <td>{{item.name}}</td>
+        <td>{{item.size }}{{item.unit}}</td>
+        <td>{{item.packaging}}</td>
+        <td>Modify</td>
+    </tr>
 {%endfor%}
-</ul>>
+</table>
 </body>
 </html>

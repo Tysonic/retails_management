@@ -19,13 +19,15 @@ def add_item():
     form = AddItem()
     if form.validate_on_submit():
         new_items = Items(name=form.item.data, size=form.size.data, unit=form.unit.data,
-                          packaging=form.packaging.data, created_by="", created_at=None,updated_by="",updated_at=None)
+                          packaging=form.packaging.data, created_by="", created_at=None)
         db.session.add(new_items)
         db.session.commit()
         return redirect(url_for("Items.list_of_items"))
     return render_template("add_items.html", form = form)
 
 
-@items_blueprint.route("/items/update item details")
-def update_item_details():
+@items_blueprint.route("/items/update item details", methods = ['GET','POST'])
+def update_item_details(id):
+    #form =
+    #edit_item = Items.query.filter_by(Id==)
     return "update item properties"
