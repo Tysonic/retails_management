@@ -9,7 +9,7 @@ class Purchases(db.Model):
     purchased_by = db.Column(db.String)
     purchased_on = db.Column(db.DateTime)
     recorded_at = db.Column(db.DateTime)
-    item_purchased = db.Column(db.String)
+    item_purchased = db.Column(db.String, db.ForeignKey('Items.Id'))
 
     def __init__(self, price, date_purchased, quantity_purchased, purchased_by, purchased_on, recorded_at, item_purchased):
         self.price = price

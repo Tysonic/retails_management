@@ -1,5 +1,7 @@
 from Cices_enterprise import db
 from wtforms.validators import DataRequired
+from Cices_enterprise.Modules.Purchases import Purchases
+from Cices_enterprise.Modules.Sales import Sales
 
 class Items(db.Model):
     __tablename__ = "Items"
@@ -10,6 +12,9 @@ class Items(db.Model):
     packaging = db.Column(db.String)
     created_by = db.Column(db.String)
     created_at = db.Column(db.DateTime)
+    sales = db.relationship('Sales')
+    purchases = db.relationship('Purchases')
+
 
     def __init__(self,name, unit="", size=0, packaging="", created_by="", created_at=None):
         self.name = name
