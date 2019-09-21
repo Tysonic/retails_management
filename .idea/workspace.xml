@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df2e8bef-8bde-435b-8269-2ddd47aa02d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/templates/add_expenses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/templates/expenses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/templates/update_expenes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/1b54a2f1cfde_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Cice_shoppers.db" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Cice_shoppers.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Purchases.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Purchases.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Sales.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Staffs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Staffs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/OtherExpenses/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/Forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/OtherExpenses/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/Views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/Views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/add_purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/add_purchases.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/purchases.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/Forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/Views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/add_sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/add_sales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/sales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/Forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/Views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/add_staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/add_staffs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/staffs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/298497e5cdac_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/58eeaf73e8c8_creating_table_of_the_variou_modules.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/8f87745acd64_.py" beforeDir="false" />
-    </list>
+    <list default="true" id="df2e8bef-8bde-435b-8269-2ddd47aa02d3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
