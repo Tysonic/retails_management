@@ -12,8 +12,8 @@ class Items(db.Model):
     packaging = db.Column(db.String)
     created_by = db.Column(db.String)
     created_at = db.Column(db.DateTime)
-    sales = db.relationship('Sales')
-    purchases = db.relationship('Purchases')
+    sales = db.relationship('Sales', backref='Sales')
+    purchases = db.relationship('Purchases', backref='Purchases')
 
 
     def __init__(self,name, unit="", size=0, packaging="", created_by="", created_at=None):
@@ -26,4 +26,3 @@ class Items(db.Model):
 
     def __repr__(self):
         return f"{self.name, self.unit, self.size, self.packaging,self.created_by,self.created_at} "
-

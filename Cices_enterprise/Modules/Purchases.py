@@ -2,6 +2,7 @@ from Cices_enterprise import db
 
 
 class Purchases(db.Model):
+    __tablename__ = "Purchases"
     Id = db.Column(db.Integer, primary_key =True, index=True)
     price = db.Column(db.String)
     date_purchased = db.Column(db.DateTime)
@@ -22,4 +23,3 @@ class Purchases(db.Model):
 
     def __repr__(self):
         f"{self.price,self.date_purchased, self.quantity_purchased,  self.purchased_by, self.purchased_on, self.recorded_at, self.item_purchased}"
-

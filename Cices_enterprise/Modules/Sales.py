@@ -2,6 +2,7 @@ from Cices_enterprise import db
 
 
 class Sales(db.Model):
+    __tablename__ = "Sales"
     Id = db.Column(db.Integer, primary_key =True, index=True)
     price = db.Column(db.String)
     date_sold = db.Column(db.DateTime)

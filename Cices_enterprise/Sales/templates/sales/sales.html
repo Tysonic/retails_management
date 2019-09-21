@@ -5,6 +5,27 @@
     <title>Title</title>
 </head>
 <body>
+<table>
+    <tr>
+        <td>{{form.item.label}}</td>
+        <td>{{form.price.label}}</td>
+        <td>{{form.quantity.label}}</td>
+        <td>{{form.unit.label}}</td>
+        <td>{{form.sold_on.label}}</td>
+        <td></td>
+    </tr>
+    {%for sale in sales%}
+    <tr>
+        <td>{{sale.item}}</td>
+        <td>{{sale.price}}</td>
+        <td>{{sale.date_sold}}</td>
+        <td>{{sale.quantity}}</td>
+        <td>{{sale.unit_sold}}</td>
+        <td>{{sale.date_sold}}+</td>
+    </tr>
+    {%endfor%}
 
+
+</table>
 </body>
 </html>

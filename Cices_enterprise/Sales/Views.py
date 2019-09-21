@@ -22,6 +22,6 @@ def add_new_sales():
         db.session.add(new_sale)
         db.session.commit()
         return redirect(url_for("list_of_items"))
-    return render_template("add_sales.html")
+    return render_template("add_sales.html", form=form)
 
 

@@ -8,8 +8,9 @@ purchase_blueprint = Blueprint("Purchases",__name__, template_folder="templates/
 
 @purchase_blueprint.route("/purchase/list of purchases")
 def list_of_purchases():
+    form = AddPurchase()
     purchases = Purchases.query.all()
-    return render_template("purchases.html", purchases=purchases)
+    return render_template("purchases.html", purchases=purchases, form=form)
 
 @purchase_blueprint.route("/purchases/add purchase record")
 def add_purchase_record():
@@ -20,4 +21,4 @@ def add_purchase_record():
         db.session.add(new_purchase)
         db.session.commit()
         return redirect(url_for("list_of_purchases"))
-    return render_template("add_purchases.html")
+    return render_template("add_purchases.html", form=form)

@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-
+<form>
+    {{form.hidden_tag()}}
+    {{form.user_name.label}}{{form.user_name()}}
+    {{form.first_name.label}}{{form.first_name()}}
+    {{form.other_name.label}}{{form.other_name()}}
+    {{form.address.label}}{{form.address()}}
+    {{form.next_of_kin.label}}{{form.next_of_kin()}}
+    {{form.birthday.label}}{{form.birthday()}}
+    {{form.role.label}}{{form.role()}}
+    {{form.tel.label}}{{form.tel()}}
+    {{form.email.label}}{{form.email()}}
+    {{form.submit}}
+</form>
 </body>
 </html>

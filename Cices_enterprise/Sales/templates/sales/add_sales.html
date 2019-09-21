@@ -5,6 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-
+<form method="post">
+    {{form.hidden_tag()}}
+    {{form.item.label}}{{form.item()}}
+    {{form.price.label}}{{form.price()}}
+    {{form.quantity.label}}{{form.quantity()}}
+    {{form.unit.label}}{{form.unit()}}
+    {{form.sold_on.label}}{{form.sold_on()}}
+    {{form.submit}}
+</form>
 </body>
 </html>

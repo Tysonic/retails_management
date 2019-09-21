@@ -2,26 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df2e8bef-8bde-435b-8269-2ddd47aa02d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/add_purchases.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/purchases.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/add_sales.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/sales.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/update_sales.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/add_staffs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/staffs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/update_staff_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/298497e5cdac_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/templates/add_expenses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/templates/expenses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/templates/update_expenes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/1b54a2f1cfde_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Cice_shoppers.db" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Cice_shoppers.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Purchases.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Purchases.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Sales.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Staffs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Staffs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/OtherExpenses/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/Forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/OtherExpenses/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/Views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/Views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/add_purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/add_purchases.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/purchases.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/Forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/Views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/add_sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/add_sales.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/sales.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/Forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/Views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/add_staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/add_staffs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/staffs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/298497e5cdac_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/58eeaf73e8c8_creating_table_of_the_variou_modules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/8f87745acd64_.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +45,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
@@ -122,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568871029027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created views, form, and table relationships">
+      <created>1568942931559</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568942931559</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +160,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="created the table modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="created the table modules" />
+    <MESSAGE value="created views, form, and table relationships" />
+    <option name="LAST_COMMIT_MESSAGE" value="created views, form, and table relationships" />
   </component>
 </project>

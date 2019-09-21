@@ -3,9 +3,9 @@ from wtforms import SubmitField, StringField, SelectField, IntegerField,DateTime
 
 
 class AddSales(FlaskForm):
-    item = SelectField("Item")
+    item = StringField("Item")
     price = IntegerField("Price")
     quantity = IntegerField("Quantity")
-    unit = SelectField("Unit")
+    unit = StringField("Unit")
     sold_on = DateTimeField("Sold on")
     submit = SubmitField("Save")

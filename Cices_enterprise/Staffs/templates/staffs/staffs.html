@@ -5,6 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-
+<table>
+    <tr>
+        <td>{{form.user_name.label}}</td>
+        <td>{{form.first_name.label}}</td>
+        <td>{{form.other_name.label}}</td>
+        <td>{{form.address.label}}</td>
+        <td>{{form.next_of_kin.label}}</td>
+        <td>{{form.birthday.label}}</td>
+        <td>{{form.role.label}}</td>
+        <td>{{form.tel.label}}</td>
+        <td>{{form.email.label}}</td>
+    </tr>
+    {%for staff in staffs %}
+    <tr>
+        <td>{{staff.user_name}}</td>
+        <td>{{staff.first_name}}</td>
+        <td>{{staff.other_name}}</td>
+        <td>{{staff.home_address}}</td>
+        <td>{{staff.next_of_kin}}</td>
+        <td>{{staff.date_of_birth}}</td>
+        <td>{{staff.role}}</td>
+        <td>{{staff.telephone}}</td>
+        <td>{{staff.email}}</td>
+    </tr>
+    {%endfor%}
+</table>
 </body>
 </html>

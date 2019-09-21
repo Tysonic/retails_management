@@ -2,15 +2,15 @@ from Cices_enterprise import db
 
 
 class Staffs(db.Model):
-    Id = db.column(db.Integer, primary_key=True, index=True)
-    user_name = db.Column(db.String, unique=True)
+    __tablename__ = 'Staffs'
+    user_name = db.Column(db.String, primary_key=True, index=True, unique=True)
     first_name = db.Column(db.String)
     other_name = db.Column(db.String)
     home_address = db.Column(db.String)
     next_of_kin = db.Column(db.String)
     date_of_birth = db.Column(db.DateTime)
     role = db.Column(db.String)
-    telephone_contact = db.Column(db.string)
+    telephone_contact = db.Column(db.String)
     email = db.Column(db.String)
 
     def __init__(self, user_name, first_name, other_name, home_address, next_of_kin, date_of_birth, role, telephone_contact, email):

@@ -4,7 +4,7 @@ from flask import render_template, redirect, url_for, flash, Blueprint
 from Cices_enterprise import db
 
 staffs_blueprint = Blueprint('Staffs', __name__, template_folder="templates/staffs")
-@staffs_blueprint.route('/staffs/add new staff')
+@staffs_blueprint.route('/staffs/add new staff', methods=['GET','POST'])
 def add_staff():
     form = AddStaff()
     if form.validate_on_submit():
@@ -16,10 +16,10 @@ def add_staff():
         db.session.add(new_staff)
         db.session.commit()
         return redirect(url_for('staffs.html'))
-    return render_template("add_staffs.html")
+    return render_template("add_staffs.html", form=form)
 
 @staffs_blueprint.route("/staffs/list of staffs")
 def list_of_staffs():
     form = AddStaff()
     staffs = Staffs.query.all()
-    return render_template("staff.html", staffs=staffs, form=form)
+    return render_template("staffs.html", staffs=staffs, form=form)
