@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Tysonic\PycharmProjects\online_business\venv"
+VIRTUAL_ENV="C:\Users\hp\PycharmProjects\Cices_enterprise\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
