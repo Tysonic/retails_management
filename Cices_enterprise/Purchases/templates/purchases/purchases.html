@@ -9,15 +9,13 @@
     <tr>
         <td>{{form.item.label}}</td>
         <td>{{form.price.label}}</td>
-        <td>{{form.date.label}}</td>
-        <td>{{form.quantity.label}}</td>
+
     </tr>
     {%for purchase in purchases%}
     <tr>
         <td>{{purchase.item}}</td>
         <td>{{purchase.price}}</td>
-        <td>{{purchase.quantity_purchased}}</td>
-        <td>{{purchase.purchased_on}}</td>
+
     </tr>
 
     {%endfor%}
