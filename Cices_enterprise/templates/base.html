@@ -1,10 +1,10 @@
 {% extends "bootstrap/base.html" %}
-{% block title %}This is an example page{% endblock %}
+{% block title %}Cice tailoring enterprise{% endblock %}
 
 {% block navbar %}
-<div class="container ">
+<div class="container " >
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" role="navigation" style="background: aquamarine">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -18,19 +18,43 @@
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
+    <ul class="nav navbar-nav ">
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <a href="{{url_for('Items.list_of_items')}}" class="dropdown-toggle" data-toggle="dropdown">Items<b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
           <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
+          <li><a href="{{url_for('Items.add_item')}}">New Item</a></li>
           <li class="divider"></li>
-          <li><a href="#">One more separated link</a></li>
+          <li><a href="{{url_for('Items.list_of_items')}}">Item List</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="{{url_for('Items.list_of_items')}}" class="dropdown-toggle" data-toggle="dropdown">Purchases<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li class="divider"></li>
+          <li><a href="{{url_for('Items.add_item')}}">New Purchase</a></li>
+          <li class="divider"></li>
+          <li><a href="{{url_for('Items.list_of_items')}}">Purchase List</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="{{url_for('Items.list_of_items')}}" class="dropdown-toggle" data-toggle="dropdown">Sales<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li class="divider"></li>
+          <li><a href="{{url_for('Items.add_item')}}">New Sales</a></li>
+          <li class="divider"></li>
+          <li><a href="{{url_for('Items.list_of_items')}}">List of sales</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="{{url_for('Items.list_of_items')}}" class="dropdown-toggle" data-toggle="dropdown">Staffs<b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li class="divider"></li>
+          <li><a href="{{url_for('Items.add_item')}}">New Staff</a></li>
+          <li class="divider"></li>
+          <li><a href="{{url_for('Items.list_of_items')}}">List of Staffs</a></li>
         </ul>
       </li>
     </ul>
@@ -47,6 +71,11 @@
 {% endblock %}
 
 {% block content %}
-  <h1>Hello, Bootstrap</h1>
+
 {% endblock %}
-  </div>
+
+
+{%block footer%}<div style="text-align: center">Alls reserved @Cice righte ent 2019 </div>{%endblock%}
+
+</div>
+
