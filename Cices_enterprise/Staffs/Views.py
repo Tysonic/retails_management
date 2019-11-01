@@ -8,14 +8,14 @@ staffs_blueprint = Blueprint('Staffs', __name__, template_folder="templates/staf
 def add_staff():
     form = AddStaff()
     if form.validate_on_submit():
-        new_staff = Staffs(user_name = form.user_name.data, first_name=form.first_name.data,
+        new_staff = Staffs(user_name=form.user_name.data, first_name=form.first_name.data,
                            other_name=form.other_name.data, home_address=form.address.data,
                            next_of_kin=form.next_of_kin.data,telephone_contact=form.tel.data,
-                           date_of_birth=form.birthday.data, role=form.role.data,
+                            role=form.role.data,
                            email=form.email.data)
         db.session.add(new_staff)
         db.session.commit()
-        return redirect(url_for('staffs.html'))
+        return redirect(url_for('Staffs.list_of_staffs'))
     return render_template("add_staffs.html", form=form)
 
 @staffs_blueprint.route("/staffs/list of staffs")

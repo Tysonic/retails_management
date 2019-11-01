@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+
+{%extends"base.html"%}
+{%block content%}
 <form method="post">
     {{form.hidden_tag()}}
-    {{form.item.label}}{{form.item()}}
-    {{form.price.label}}{{form.price()}}
-    {{form.submit()}}
+    {{form.item_purchased.label}}{{form.item_purchased()}}
+    {{form.unit_price.label}}{{form.unit_price()}}
+    {{form.quantity_purchased.label}}{{form.quantity_purchased()}}
 
+    {{form.submit()}}
 </form>
-</body>
-</html>
+
+{%endblock%}
+

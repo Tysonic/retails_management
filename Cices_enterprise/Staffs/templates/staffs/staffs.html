@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+
+{%extends"base.html"%}
+{%block content%}
 <table>
     <tr>
         <td>{{form.user_name.label}}</td>
@@ -31,5 +27,4 @@
     </tr>
     {%endfor%}
 </table>
-</body>
-</html>
+{%endblock%}

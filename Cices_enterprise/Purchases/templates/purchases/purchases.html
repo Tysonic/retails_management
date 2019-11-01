@@ -1,24 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+
+{% extends "base.html"%}
+{%block content%}
+
 <table>
     <tr>
-        <td>{{form.item.label}}</td>
-        <td>{{form.price.label}}</td>
-
+        <td>{{form.item_purchased.label}}</td>
+        <td>{{form.unit_price.label}}</td>
+        <td>{{form.purchase_date.label}}</td>
+        <td>{{form.recorded_at.label}}</td>
+        <td>{{form.purchased_by.label}}</td>
+        <td>{{form.quantity_purchased.label}}</td>
+        <td>{{form.updated_at.label}}</td>
+        <td>{{form.updated_by.label}}</td>
     </tr>
     {%for purchase in purchases%}
     <tr>
-        <td>{{purchase.item}}</td>
-        <td>{{purchase.price}}</td>
+        <td>{{purchase.item_purchased}}</td>
+        <td>{{purchase.unit_price}}</td>
+        <td>{{purchase.purchase_date}}</td>
+        <td>{{purchase.recorded_at}}</td>
+        <td>{{purchase.purchased_by}}</td>
+        <td>{{purchase.quantity_purchased}}</td>
+        <td>{{purchase.updated_at}}</td>
+        <td>{{purchase.updated_by}}</td>
 
     </tr>
-
     {%endfor%}
 </table>
-</body>
-</html>
+
+{%endblock%}

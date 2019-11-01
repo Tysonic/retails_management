@@ -12,8 +12,8 @@ class Items(db.Model):
     packaging = db.Column(db.String)
     created_by = db.Column(db.String)
     created_at = db.Column(db.DateTime)
-    sales = db.relationship('Sales', backref='Sales')
-    purchases = db.relationship('Purchases', backref='Purchases')
+    sales = db.relationship('Sales', backref='sales')
+    purchases = db.relationship('Purchases', backref='purchase')
 
 
     def __init__(self,name, unit="", size=0, packaging="", created_by="", created_at=None):

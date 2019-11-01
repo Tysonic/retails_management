@@ -2,18 +2,13 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField, IntegerField, DateTimeField
 from Cices_enterprise.Modules.Items import Items
 
-
-
-def item_choises():
-    item_list = []
-    items = Items.query.all()
-    for item in items:
-        item_list.append((item.Id, item.name))
-    return item_list
-
 class AddPurchase(FlaskForm):
-    item = SelectField(label="Item",coerce=int)
-    price = IntegerField("Price")
-    date = DateTimeField("Date")
-    quantity = IntegerField("Quantity")
+    item_purchased = SelectField(label="Item",coerce=int)
+    unit_price = IntegerField("Price")
+    quantity_purchased = IntegerField("Quantity Purchased")
+    purchase_date = DateTimeField("Date Purchased")
+    recorded_at = DateTimeField("Recorded At")
+    purchased_by = StringField("Purchased by ")
+    updated_at = DateTimeField("Updated At")
+    updated_by = StringField("Updated By")
     submit = SubmitField("Save")
