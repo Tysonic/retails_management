@@ -1,24 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<form method="post">
+{% extends "base.html"%}
+{%block content%}
+<div class="jumbotron">
+  <div class="col-md-5 p-lg-10 mx-auto my-10" >
+<form method="post" >
     {{form.hidden_tag()}}
-    {{form.user_name.label}}{{form.user_name()}}
-    {{form.first_name.label}}{{form.user_name()}}
-    {{form.other_name.label}}{{form.user_name()}}
-    {{form.address.label}}{{form.user_name()}}
-    {{form.next_of_kin.label}}{{form.user_name()}}
-    {{form.birthday.label}}{{form.user_name()}}
-    {{form.role.label}}{{form.user_name()}}
-    {{form.tel.label}}{{form.user_name()}}
-    {{form.email.label}}{{form.user_name()}}
-    submit = SubmitField("Register")
 
-    {{form.submit()}}
+
+
+  <div class="form-group row">
+    <label for="user_name" class="col-sm-2 p-lg-1 ">{{form.user_name.label}}</label>
+    <div class="col-sm-10" id = "user_name">
+      {{form.user_name(class="form-control")}}
+    </div>
+  </div>
+
+    <div class="form-group row">
+    <label for="first_name" class="col-sm-2 p-lg-1  col-form-label">{{form.first_name.label}}</label>
+    <div class="col-sm-10" id = "first_name">
+     {{form.first_name(class="form-control")}}
+    </div>
+  </div>
+
+    <div class="form-group row ">
+    <label for="other_name" class="col-sm-2 p-lg-1  col-form-label">{{form.other_name.label}}</label>
+    <div class="col-sm-10" id = "other_name">
+      {{form.div>other_name(class="form-control")}}
+    </div>
+    </div>
+
+    <div class="form-group row ">
+    <label for="address" class="col-sm-2 p-lg-1  col-form-label">{{form.address.label}}</label>
+    <div class="col-sm-10" id = "address">
+      {{form.address(class="form-control")}}
+    </div>
+  </div>
+    <div class="form-group row ">
+    <label for="kin" class="col-sm-2 p-lg-1  col-form-label">{{form.next_of_kin.label}}</label>
+    <div class="col-sm-10" id = "kin">
+      {{form.next_of_kin(class="form-control")}}
+    </div>
+  </div>
+    <div class="form-group row ">
+    <label for="birthday" class="col-sm-2 p-lg-1  col-form-label">{{form.birthday.label}}</label>
+    <div class="col-sm-10" id = "birthday">
+      {{form.birthday(class="form-control")}}
+    </div>
+  </div>
+    <div class="form-group row ">
+    <label for="role" class="col-sm-2 p-lg-1  col-form-label">{{form.role.label}}</label>
+    <div class="col-sm-10" id = "role">
+      {{form.role(class="form-control")}}
+    </div>
+  </div>
+    <div class="form-group row ">
+    <label for="tel" class="col-sm-2 p-lg-1  col-form-label">{{form.tel.label}}</label>
+    <div class="col-sm-10" id = "tel">
+      {{form.tel(class="form-control")}}
+    </div>
+  </div>
+    <div class="form-group row ">
+    <label for="email" class="col-sm-2 p-lg-1  col-form-label">{{form.email.label}}</label>
+    <div class="col-sm-10" id = "email">
+      {{form.email(class="form-control email")}}
+    </div>
+  </div>
+<div>{{form.submit(class="btn btn-success")}}</div>
+
+
 </form>
-</body>
-</html>
+  </div>
+</div>
+{%endblock%}

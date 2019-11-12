@@ -1,139 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df2e8bef-8bde-435b-8269-2ddd47aa02d3" name="Default Changelist" comment="created the nav bars">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Computations/Uploader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/dress 1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/dress2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/electro1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/electro2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/electro3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/nicho.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/nike.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/a32ec6f8be9e_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/ab3cd8e5ace6_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_Bootstrap4-4.0.2.dist-info/DESCRIPTION.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_Bootstrap4-4.0.2.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_Bootstrap4-4.0.2.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_Bootstrap4-4.0.2.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_Bootstrap4-4.0.2.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_Bootstrap4-4.0.2.dist-info/metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_Bootstrap4-4.0.2.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/fontawesome-all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/umd/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/umd/popper.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/umd/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/umd/popper.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="df2e8bef-8bde-435b-8269-2ddd47aa02d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/Images/WIN_20191112_13_56_13_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/templates/forms/checkbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/templates/forms/input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/templates/forms/select.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/templates/forms/textarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Uploaders/templates/uploaders/image_uploader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/versions/6a28a2f96011_.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Cice_shoppers.db" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Cice_shoppers.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Computations/dropdowns.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Computations/dropdowns.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/templates/add_expenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/add_expenses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/templates/expenses.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/expenses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/templates/update_expenes.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Expenses/templates/expenses/update_expenes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Cice_shoppers.db" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/CiceDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Computations/Uploader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Uploaders/Uploader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Items/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Items/Views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Items/templates/items/add_items.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Items/templates/items/add_items.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Items/templates/items/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Items/templates/items/items.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Purchases.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Purchases.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Sales.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/Staffs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Staffs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/Forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/Views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/ItemImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/ItemImages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/add_purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/add_purchases.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/purchases.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/Forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/Views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/add_sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/add_sales.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/sales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/update_sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/update_sales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/Forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/Forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/Views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/add_staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/add_staffs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/staffs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/update_staff_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/update_staff_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/dress 1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Static/Images/dress_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/dress2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/electro1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Static/Images/electro1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/electro2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Static/Images/electro2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/electro3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/nicho.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/nike.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/INSTALLER" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/INSTALLER" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/LICENSE.rst" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/LICENSE.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/METADATA" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/METADATA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/WHEEL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/entry_points.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/entry_points.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/top_level.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/_compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/_compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/blueprints.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/blueprints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/cli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/ctx.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/ctx.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/debughelpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/debughelpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/globals.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/globals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/json/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/json/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/json/tag.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/json/tag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/logging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/sessions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/sessions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/signals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/templating.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/templating.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask/wrappers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask/wrappers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/nav.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/nav.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/jquery.min.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/static/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/templates/bootstrap/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/templates/bootstrap/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/templates/bootstrap/google.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/templates/bootstrap/google.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/templates/bootstrap/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/templates/bootstrap/pagination.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/templates/bootstrap/utils.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/templates/bootstrap/utils.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/templates/bootstrap/wtf.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/flask_bootstrap/templates/bootstrap/wtf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/flask.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/flask.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/a32ec6f8be9e_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/ec73218efc31_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/ab3cd8e5ace6_.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,8 +83,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -190,7 +112,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python&#10;GitIgnore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Cices_enterprise/Static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Image_gallary" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -205,16 +127,19 @@
       <recent name="https://github.com/Tysonic/Cices_enterprise" />
       <recent name="http://https://github.com/Tysonic/Cices_enterprise" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Expenses\templates\expenses" />
-      <recent name="C:\Users\Tysonic\PycharmProjects\online_business\Cices_enterprise" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Modules\templates\images" />
       <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Static" />
       <recent name="C:\Users\Tysonic\PycharmProjects\online_business\Cices_enterprise" />
       <recent name="C:\Users\Tysonic\PycharmProjects\online_business\Cices_enterprise\Staffs" />
       <recent name="C:\Users\Tysonic\PycharmProjects\online_business\Cices_enterprise\Sales" />
-      <recent name="C:\Users\Tysonic\PycharmProjects\online_business\Cices_enterprise\Purchases" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Images" />
+      <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Static\Images" />
+      <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Uploaders" />
+      <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Static" />
+      <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Expenses\templates\expenses" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -230,6 +155,9 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.App">
+    <configuration name="base.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Cices_enterprise/Cices_enterprise/templates/base.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="App" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="online_business" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -300,9 +228,9 @@
       <list>
         <item itemvalue="Python.App" />
         <item itemvalue="Python.scratch" />
+        <item itemvalue="JavaScript Debug.base.html" />
         <item itemvalue="Python.Constants" />
         <item itemvalue="Python.App" />
-        <item itemvalue="Python.Constants" />
       </list>
     </recent_temporary>
   </component>
@@ -350,7 +278,28 @@
       <workItem from="1572436004727" duration="471000" />
       <workItem from="1572466753857" duration="1400000" />
       <workItem from="1572517686910" duration="5974000" />
-      <workItem from="1572618252541" duration="6322000" />
+      <workItem from="1572618252541" duration="6605000" />
+      <workItem from="1572692592666" duration="1239000" />
+      <workItem from="1572697619618" duration="560000" />
+      <workItem from="1572783453556" duration="3456000" />
+      <workItem from="1572865427470" duration="351000" />
+      <workItem from="1572867410073" duration="254000" />
+      <workItem from="1572874657096" duration="3375000" />
+      <workItem from="1572977905786" duration="11832000" />
+      <workItem from="1573043449121" duration="5085000" />
+      <workItem from="1573073626166" duration="546000" />
+      <workItem from="1573148937873" duration="6754000" />
+      <workItem from="1573202514169" duration="2653000" />
+      <workItem from="1573209994663" duration="694000" />
+      <workItem from="1573242158349" duration="3098000" />
+      <workItem from="1573280853357" duration="8521000" />
+      <workItem from="1573303912598" duration="9450000" />
+      <workItem from="1573321677335" duration="5889000" />
+      <workItem from="1573450161304" duration="1700000" />
+      <workItem from="1573472523675" duration="1356000" />
+      <workItem from="1573478934534" duration="3077000" />
+      <workItem from="1573500968815" duration="1800000" />
+      <workItem from="1573549457578" duration="4715000" />
     </task>
     <task id="LOCAL-00001" summary="created the table modules">
       <created>1568871029027</created>
@@ -401,11 +350,28 @@
       <option name="project" value="LOCAL" />
       <updated>1571814623271</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed burg of failure to save to database">
+      <created>1572625601567</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572625601583</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -426,11 +392,12 @@
     <MESSAGE value="created views, form, and table relationships" />
     <MESSAGE value="created a drop down list for items" />
     <MESSAGE value="created the nav bars" />
-    <option name="LAST_COMMIT_MESSAGE" value="created the nav bars" />
+    <MESSAGE value="fixed burg of failure to save to database" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed burg of failure to save to database" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Cices_enterprise$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1571342669888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/Cices_enterprise$Constants.coverage" NAME="Constants Coverage Results" MODIFIED="1571426177772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cices_enterprise/Computations" />
-    <SUITE FILE_PATH="coverage/Cices_enterprise$App.coverage" NAME="App Coverage Results" MODIFIED="1572618328027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cices_enterprise$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1573450922014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/Cices_enterprise$App.coverage" NAME="App Coverage Results" MODIFIED="1573554380965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

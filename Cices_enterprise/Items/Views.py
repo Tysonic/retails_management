@@ -1,9 +1,14 @@
-from Cices_enterprise import db
+import os
+
+from flask_wtf import file
+
+from Cices_enterprise import db, upload
 from flask import render_template, redirect, flash, url_for
 from Cices_enterprise.Modules.Items import Items
 from Cices_enterprise.Items.Forms import AddItem
-from flask import Blueprint
-
+from flask import Blueprint, request
+from werkzeug.utils import secure_filename
+from Cices_enterprise.Uploaders.Uploader import AddImage
 
 items_blueprint = Blueprint("Items", __name__, template_folder="templates/items")
 
@@ -17,7 +22,10 @@ def list_of_items():
 @items_blueprint.route("/items/add new item", methods = ["GET","POST"])
 def add_item():
     form = AddItem()
-    if form.validate_on_submit():
+    if form.validate_on_submit() and request.method=='POST':
+        image_file = request.files['imagefile']
+        new_image = secure_filename(image_file.filename)
+        image_file.save(os.path.join(upload, new_image))
         new_items = Items(name=form.item.data, size=form.size.data, unit=form.unit.data,
                           packaging=form.packaging.data, created_by="", created_at=None)
         db.session.add(new_items)
