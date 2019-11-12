@@ -2,60 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df2e8bef-8bde-435b-8269-2ddd47aa02d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/Images/WIN_20191112_13_56_13_Pro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/statics/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/templates/forms/checkbox.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/templates/forms/input.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/templates/forms/select.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/bootstrap4/templates/forms/textarea.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Uploaders/templates/uploaders/image_uploader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/6a28a2f96011_.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/Images/nicho.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Uploads/Forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Uploads/Views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Cice_shoppers.db" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/CiceDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Computations/Uploader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Uploaders/Uploader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/Items/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Items/Views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Items/templates/items/add_items.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Items/templates/items/add_items.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Items/templates/items/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Items/templates/items/items.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/ItemImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/ItemImages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/add_purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/add_purchases.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Purchases/templates/purchases/purchases.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/add_sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/add_sales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Sales/templates/sales/sales.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/add_staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/add_staffs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Staffs/templates/staffs/staffs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/dress 1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Static/Images/dress_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/dress2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/electro1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Static/Images/electro1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/electro2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Static/Images/electro2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/electro3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/nicho.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/nike.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/ItemImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Uploads.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Uploaders/Uploader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Uploaders/templates/uploaders/image_uploader.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Uploads/templates/uploaders/image_uploader.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cices_enterprise/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/a32ec6f8be9e_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/ec73218efc31_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/ab3cd8e5ace6_.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,12 +39,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Tysonic" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Nichodemus" />
@@ -96,6 +57,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -299,7 +261,7 @@
       <workItem from="1573472523675" duration="1356000" />
       <workItem from="1573478934534" duration="3077000" />
       <workItem from="1573500968815" duration="1800000" />
-      <workItem from="1573549457578" duration="4715000" />
+      <workItem from="1573549457578" duration="7952000" />
     </task>
     <task id="LOCAL-00001" summary="created the table modules">
       <created>1568871029027</created>
@@ -357,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572625601583</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed burg of failure to save to database">
+      <created>1573558484073</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573558484073</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +366,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Cices_enterprise$Constants.coverage" NAME="Constants Coverage Results" MODIFIED="1571426177772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cices_enterprise/Computations" />
-    <SUITE FILE_PATH="coverage/Cices_enterprise$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1573450922014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/Cices_enterprise$App.coverage" NAME="App Coverage Results" MODIFIED="1573554380965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cices_enterprise$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1573558919434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/Cices_enterprise$App.coverage" NAME="App Coverage Results" MODIFIED="1573561476378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

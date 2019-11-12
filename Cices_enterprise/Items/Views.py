@@ -8,7 +8,7 @@ from Cices_enterprise.Modules.Items import Items
 from Cices_enterprise.Items.Forms import AddItem
 from flask import Blueprint, request
 from werkzeug.utils import secure_filename
-from Cices_enterprise.Uploaders.Uploader import AddImage
+from Cices_enterprise.Uploads.Views import AddImage
 
 items_blueprint = Blueprint("Items", __name__, template_folder="templates/items")
 
