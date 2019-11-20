@@ -23,9 +23,6 @@ def list_of_items():
 def add_item():
     form = AddItem()
     if form.validate_on_submit() and request.method=='POST':
-        image_file = request.files['imagefile']
-        new_image = secure_filename(image_file.filename)
-        image_file.save(os.path.join(upload, new_image))
         new_items = Items(name=form.item.data, size=form.size.data, unit=form.unit.data,
                           packaging=form.packaging.data, created_by="", created_at=None)
         db.session.add(new_items)

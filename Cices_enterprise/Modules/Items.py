@@ -2,10 +2,11 @@ from Cices_enterprise import db
 from wtforms.validators import DataRequired
 from Cices_enterprise.Modules.Purchases import Purchases
 from Cices_enterprise.Modules.Sales import Sales
+from Cices_enterprise.Modules.Uploads import Images
 
 class Items(db.Model):
     __tablename__ = "Items"
-    Id = db.Column(db.Integer, primary_key=True, index=True)
+    _Id = db.Column(db.Integer, primary_key=True, index=True)
     name = db.Column(db.String, unique=True)
     size = db.Column(db.Integer)
     unit = db.Column(db.String)
@@ -14,6 +15,7 @@ class Items(db.Model):
     created_at = db.Column(db.DateTime)
     sales = db.relationship('Sales', backref='sales')
     purchases = db.relationship('Purchases', backref='purchase')
+   # image = db.relationship("Images", backref='image')
 
 
     def __init__(self,name, unit="", size=0, packaging="", created_by="", created_at=None):

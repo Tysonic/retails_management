@@ -13,7 +13,7 @@ class Purchases(db.Model):
     updated_at = db.Column(db.DateTime)
     updated_by = db.Column(db.String)
     quantity_purchased = db.Column(db.Integer, nullable=False)
-    item_purchased = db.Column(db.Integer, db.ForeignKey("Items.Id"))
+    item_purchased = db.Column(db.Integer, db.ForeignKey("Items._Id"))
 
     def __repr__(self):
         f"{self.price, self.item_purchased,self.quantity_purchased}, " \

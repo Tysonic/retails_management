@@ -7,7 +7,7 @@ def dropdown(item_selecte):
     items = Items.query.all()
     item_choise=[]
     for item in items:
-        item_choise.append((item.Id,item.name))
+        item_choise.append((item._Id,item.name))
     item_selecte.item_sold.choices=item_choise
 
 
