@@ -3,7 +3,7 @@ from datetime import datetime
 
 class Sales(db.Model):
     __tablename__ = "Sales"
-    Id = db.Column(db.Integer, primary_key =True, index=True)
+    _Id = db.Column(db.Integer, primary_key =True, index=True)
     unit_price = db.Column(db.Integer, nullable=False)
     quantity_sold = db.Column(db.Integer, nullable=False)
     sold_by = db.Column(db.String)
@@ -11,7 +11,7 @@ class Sales(db.Model):
     recorded_at = db.Column(db.DateTime, default=datetime.utcnow())
     updated_by = db.Column(db.String)
     updated_at= db .Column(db.DateTime)
-    item_sold = db.Column(db.String, db.ForeignKey('Items.Id'))
+    item_sold = db.Column(db.String, db.ForeignKey('Items._Id'))
 
 
     def __repr__(self):

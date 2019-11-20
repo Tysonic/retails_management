@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df2e8bef-8bde-435b-8269-2ddd47aa02d3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Static/Images/nicho.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Uploads/Forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Uploads/Views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cices_enterprise/Uploads/templates/uploaders/image_gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Items/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Items/Views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Modules/ItemImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Modules/Uploads.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Uploaders/Uploader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Uploaders/templates/uploaders/image_uploader.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Uploads/templates/uploaders/image_uploader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cices_enterprise/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/CiceDB" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/CiceDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/Images/WIN_20191112_13_56_13_Pro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/Images/dress_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/Images/electro2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/Images/nicho.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Static/Images/tybot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cices_enterprise/Uploads/Views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cices_enterprise/Uploads/Views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -74,7 +73,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python&#10;GitIgnore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Image_gallary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -98,7 +97,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Images" />
-      <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Static\Images" />
+      <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Static\Images" value=True />
       <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Uploaders" />
       <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Static" />
       <recent name="C:\Users\hp\PycharmProjects\Cices_enterprise\Cices_enterprise\Expenses\templates\expenses" />
@@ -261,7 +260,8 @@
       <workItem from="1573472523675" duration="1356000" />
       <workItem from="1573478934534" duration="3077000" />
       <workItem from="1573500968815" duration="1800000" />
-      <workItem from="1573549457578" duration="7952000" />
+      <workItem from="1573549457578" duration="8106000" />
+      <workItem from="1573584298856" duration="4967000" />
     </task>
     <task id="LOCAL-00001" summary="created the table modules">
       <created>1568871029027</created>
@@ -326,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573558484073</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="created a file uploader for images">
+      <created>1573561617144</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1573561617144</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,11 +369,12 @@
     <MESSAGE value="created a drop down list for items" />
     <MESSAGE value="created the nav bars" />
     <MESSAGE value="fixed burg of failure to save to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed burg of failure to save to database" />
+    <MESSAGE value="created a file uploader for images" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a file uploader for images" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Cices_enterprise$Constants.coverage" NAME="Constants Coverage Results" MODIFIED="1571426177772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cices_enterprise/Computations" />
-    <SUITE FILE_PATH="coverage/Cices_enterprise$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1573558919434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
-    <SUITE FILE_PATH="coverage/Cices_enterprise$App.coverage" NAME="App Coverage Results" MODIFIED="1573561476378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Cices_enterprise$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1573588291810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/Cices_enterprise$App.coverage" NAME="App Coverage Results" MODIFIED="1573589423454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

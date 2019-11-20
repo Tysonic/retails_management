@@ -10,7 +10,7 @@ def item_form_choice(item_form):
     items = Items.query.all()
     item_names = []
     for item in items:
-        item_names.append((item.Id,item.name))
+        item_names.append((item._Id,item.name))
     item_form.item_purchased.choices = item_names
 
 
