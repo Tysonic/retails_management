@@ -1,8 +1,8 @@
-"""empty message
+"""creating the database and tables
 
-Revision ID: d0b1fca4e7ae
+Revision ID: 9eeef7f5107f
 Revises: 
-Create Date: 2019-11-17 14:36:47.672251
+Create Date: 2019-11-20 15:57:05.726519
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'd0b1fca4e7ae'
+revision = '9eeef7f5107f'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -43,25 +43,25 @@ def upgrade():
     sa.Column('email', sa.String(), nullable=True),
     sa.PrimaryKeyConstraint('Id')
     )
-    op.create_table('Status',
-    sa.Column('_Id', sa.Integer(), nullable=False),
-    sa.Column('states', sa.String(), nullable=True),
-    sa.Column('created_by', sa.String(), nullable=True),
-    sa.Column('created_at', sa.DateTime(), nullable=True),
-    sa.Column('updated_by', sa.String(), nullable=True),
-    sa.Column('updated_at', sa.DateTime(), nullable=True),
-    sa.PrimaryKeyConstraint('_Id'),
-    sa.UniqueConstraint('states')
-    )
+    op.create_table('State',
+                    sa.Column('_Id', sa.Integer(), nullable=False),
+                    sa.Column('states', sa.String(), nullable=True),
+                    sa.Column('created_by', sa.String(), nullable=True),
+                    sa.Column('created_at', sa.DateTime(), nullable=True),
+                    sa.Column('updated_by', sa.String(), nullable=True),
+                    sa.Column('updated_at', sa.DateTime(), nullable=True),
+                    sa.PrimaryKeyConstraint('_Id'),
+                    sa.UniqueConstraint('states')
+                    )
     op.create_table('Images',
-    sa.Column('_Id', sa.Integer(), nullable=False),
-    sa.Column('image', sa.String(), nullable=True),
-    sa.Column('description', sa.String(), nullable=True),
-    sa.Column('status', sa.Integer(), nullable=True),
-    sa.Column('uploaded_on', sa.DateTime(), nullable=True),
-    sa.ForeignKeyConstraint(['status'], ['Status._Id'], ),
-    sa.PrimaryKeyConstraint('_Id')
-    )
+                    sa.Column('_Id', sa.Integer(), nullable=False),
+                    sa.Column('image', sa.String(), nullable=True),
+                    sa.Column('description', sa.String(), nullable=True),
+                    sa.Column('status', sa.Integer(), nullable=True),
+                    sa.Column('uploaded_on', sa.DateTime(), nullable=True),
+                    sa.ForeignKeyConstraint(['status'], ['State._Id'], ),
+                    sa.PrimaryKeyConstraint('_Id')
+                    )
     op.create_table('Purchases',
     sa.Column('purchase_id', sa.Integer(), nullable=False),
     sa.Column('unit_price', sa.Integer(), nullable=False),
@@ -98,7 +98,7 @@ def downgrade():
     op.drop_table('Sales')
     op.drop_table('Purchases')
     op.drop_table('Images')
-    op.drop_table('Status')
+    op.drop_table('State')
     op.drop_table('Staffs')
     op.drop_index(op.f('ix_Items__Id'), table_name='Items')
     op.drop_table('Items')

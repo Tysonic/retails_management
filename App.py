@@ -1,10 +1,25 @@
-from Cices_enterprise import App
+from flask_login import login_required
+
+from Cices_enterprise import App, login_manager
 from flask import render_template
 
+from Cices_enterprise.Modules.Users import Users
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return Users.query.get(user_id)
 
 @App.route("/")
 def index():
     return render_template("index.html")
+
+
+@App.route("/welcome page", methods=['GET', 'POST'])
+@login_required
+def welcome():
+    return render_template("welcome.html")
+
 
 @App.errorhandler(404)
 def page_not_found(e):
