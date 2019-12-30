@@ -7,23 +7,21 @@
         <td>{{form.item_purchased.label}}</td>
         <td>{{form.unit_price.label}}</td>
         <td>{{form.purchase_date.label}}</td>
-        <td>{{form.recorded_at.label}}</td>
-        <td>{{form.purchased_by.label}}</td>
         <td>{{form.quantity_purchased.label}}</td>
-        <td>{{form.updated_at.label}}</td>
-        <td>{{form.updated_by.label}}</td>
+        <td>Amount</td>
     </tr>
     {%for purchase in purchases%}
     <tr>
-        <td>{{purchase.item_purchased}}</td>
+        {% for item in items%}
+        {%if purchase.item_purchased==item._Id%}
+        <td>{{item.item}}</td>
+        {%endif%}
+        {%endfor%}
+
         <td>{{purchase.unit_price}}</td>
         <td>{{purchase.purchase_date}}</td>
-        <td>{{purchase.recorded_at}}</td>
-        <td>{{purchase.purchased_by}}</td>
         <td>{{purchase.quantity_purchased}}</td>
-        <td>{{purchase.updated_at}}</td>
-        <td>{{purchase.updated_by}}</td>
-
+        <td>{{purchase.unit_price*purchase.quantity_purchased}}</td>
     </tr>
     {%endfor%}
 </table>

@@ -16,5 +16,5 @@ class Purchases(db.Model):
     item_purchased = db.Column(db.Integer, db.ForeignKey("Items._Id"))
 
     def __repr__(self):
-        f"{self.price, self.item_purchased,self.quantity_purchased}, " \
-        f"{self.recorded_at,self.purchased_by,self.purchase_date,self.unit_price, self.updated_at, self.updated_by}"
+        return f"{self.unit_price, self.item_purchased,self.quantity_purchased, self.recorded_at,self.purchased_by,self.purchase_date,self.unit_price, self.updated_at, self.updated_by}"
+

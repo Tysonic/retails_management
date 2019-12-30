@@ -6,22 +6,22 @@
         <td>{{form.item_sold.label}}</td>
         <td>{{form.unit_price.label}}</td>
         <td>{{form.quantity_sold.label}}</td>
-        <td>{{form.sold_on.label}}</td>
-        <td>{{form.sold_by.label}}</td>
-        <td>{{form.updated_by.label}}</td>
-        <td>{{form.updated_at.label}}</td>
+        <td>Amount</td>
 
         <td></td>
     </tr>
     {%for sale in sales%}
     <tr>
-        <td>{{sale.item_sold}}</td>
+        {%for item in items %}
+        {%if item._Id==sale.item_sold%}
+        <td>{{item.item}}</td>
+        {%endif%}
+        {%endfor%}
+
         <td>{{sale.unit_price}}</td>
         <td>{{sale.quantity_sold}}</td>
-        <td>{{sale.sold_on}}</td>
-        <td>{{sale.sold_by}}</td>
-        <td>{{sale.updated_by}}</td>
-        <td>{{sale.recorded_at}}</td>
+        <td>{{ sale.unit_price * sale.quantity_sold}}</td>
+
     </tr>
     {%endfor%}
 

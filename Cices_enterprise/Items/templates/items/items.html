@@ -3,17 +3,40 @@
 
 <table class="table table-striped table-bordered">
     <tr style="background: #888">
-        <td>Item Name</td>
-        <td>Item Measurement</td>
-        <td>Item Packaging</td>
+        <td>Item</td>
+        <td>Details</td>
+        <td>Packaging</td>
+        <td>Current Stock</td>
         <td></td>
     </tr>
 {% for item in items%}
-    <tr>
-        <td>{{item.name}}</td>
-        <td>{{item.size }}{{item.unit}}</td>
-        <td>{{item.packaging}}</td>
-        <td>Modify</td>
+
+        {%for val in data_list.ItemNameList()%}
+        {%if item.name==val.name_id%}
+        <td>{{val.name}}
+            {%endif%}
+        {%endfor%}
+
+    {%for val in data_list.ItemUnitList()%}
+        {%if item.unit==val.unit_id%}
+    <td>{{item.size}}{{val.unit}}</td>
+            {%endif%}
+        {%endfor%}
+
+    {%for val in data_list.ItemPackagingList()%}
+        {%if item.packaging==val.packaging_id%}
+        <td>{{val.packaging}}
+            {%endif%}
+        {%endfor%}
+    <td>{{item.stock}}</td>
+        <td>
+            <form method="post" action="Items.details.html">
+                <a href="{{ url_for('Items.details', _id=item._Id)}}" >Details </a>
+                <a href="{{ url_for('Items.edit_item', _id=item._Id)}}">Edit</a>
+                <a href="" >Trash</a>
+            </form>
+
+        </td>
     </tr>
 {%endfor%}
 </table>

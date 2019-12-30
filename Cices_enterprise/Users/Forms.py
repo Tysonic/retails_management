@@ -15,19 +15,21 @@ class UserRegitrationForm(FlaskForm):
 
     submit = SubmitField("Register")
 
+
     def check_email(self, field):
         if Users.query.filter_by(self.email == field.data).first():
-            raise ValidationError(message="your email has already been registered")
+            raise ValidationError("your email has already been registered")
+
 
     def check_username(self, field):
         if Users.query.filter_by(self.username == field.data).first():
-            raise ValidationError(message="Username already exitst")
+            raise ValidationError("Username already exitst")
 
     def check_password(self, field):
         if len(field.password < 8):
-            raise ValidationError(message="Password must be at least 8 characters long")
+            raise ValidationError("Password must be at least 8 characters long")
         if not re.search(r"[\d]+", field.password):
-            raise ValidationError(message="This password must contain at least 1 digit")
+            raise ValidationError("This password must contain at least 1 digit")
         if re.search(r"[A-Z]+", field.password.data):
             raise ValidationError("This password must contain at least 1 uppercase characte")
 

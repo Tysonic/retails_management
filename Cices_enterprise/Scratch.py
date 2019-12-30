@@ -1,4 +1,8 @@
-from Cices_enterprise.Modules.User import User
+from Cices_enterprise.Modules.Items import  Items
+from Cices_enterprise import db
 
-x = User()
-print(x)
+
+
+details = Items.query.filter_by(_Id = 1).first()
+print(details.created_by)
+

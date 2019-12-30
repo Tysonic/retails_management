@@ -1,8 +1,6 @@
 from flask_login import login_required
-
 from Cices_enterprise import App, login_manager
 from flask import render_template
-
 from Cices_enterprise.Modules.Users import Users
 
 
@@ -10,7 +8,9 @@ from Cices_enterprise.Modules.Users import Users
 def load_user(user_id):
     return Users.query.get(user_id)
 
+
 @App.route("/")
+@App.route("/home")
 def index():
     return render_template("index.html")
 
@@ -23,16 +23,17 @@ def welcome():
 
 @App.errorhandler(404)
 def page_not_found(e):
-	return render_template("404.html",error=e)
+    return render_template("404.html", error=e)
+
 
 @App.errorhandler(500)
 def Internal_server_error(e):
-	return render_template("500.html",error=e)
+    return render_template("500.html", error=e)
+
 
 # @App.errorhandler(200)
 # def Internal_server_error(e):
 # 	return render_template("200.html",error=e)
-
 
 
 if __name__ == "__main__":

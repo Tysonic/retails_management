@@ -11,17 +11,19 @@ image_blueprint = Blueprint("ItemImage",__name__, template_folder="templates/upl
 @image_blueprint.route('/image upload', methods=["POST","GET"])
 def uploader():
     form = AddImage()
-    if request.method=='POST':
-        file = request.files['imagefile']
-        filenames = secure_filename(file.filename)
-        file.save(os.path.join(upload, filenames))
-        new_item = Images(item_id=1,image=filenames, description= form.description.data)
-        db.session.add(new_item)
-        db.session.commit()
-        return redirect(url_for("ItemImage.image_gallery"))
-    return render_template('image_uploader.html', form=form)
-
-
+    try:
+        if request.method=='POST':
+            file = request.files['imagefile']
+            filenames = secure_filename(file.filename)
+            file.save(os.path.join(upload, filenames))
+            new_item = Images(image=filenames, description= form.description.data)
+            db.session.add(new_item)
+            db.session.commit()
+            return redirect(url_for("ItemImage.image_gallery"))
+        return render_template('image_uploader.html', form=form)
+    except Exception as e:
+        error = "Pliz select an image to upload"
+        return render_template('image_uploader.html', form=form, error=error)
 
 
 @image_blueprint.route('/image gallery', methods=['POST','GET'])
