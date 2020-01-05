@@ -1,0 +1,60 @@
+{% extends "base.html"%}
+{%block content%}
+<div class="jumbotron">
+  <div class="col-md-5 p-lg-10 mx-auto my-10" >
+<form method="post" enctype="multipart/form-data">
+    {{form.hidden_tag()}}
+
+  {%if error%}
+ <p> {{error}}</p>
+  {%endif%}
+  <div class="form-group row">
+    <label for="items" class="col-sm-2 p-lg-1 ">{{form.name.label}}</label>
+    <div class="col-sm-10" id = "items">
+      {{form.name()}}
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="size" class="col-sm-2 p-lg-1 ">{{form.size.label}}</label>
+    <div class="col-sm-10" id = "size">
+      {{form.size()}}
+    </div>
+  </div>
+
+    <div class="form-group row">
+    <label for="unit" class="col-sm-2 p-lg-1  col-form-label">{{form.unit.label}}</label>
+    <div class="col-sm-10" id = "unit">
+     {{form.unit()}}
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="brand" class="col-sm-2 p-lg-1  col-form-label">{{form.brand.label}}</label>
+    <div class="col-sm-10" id = "brand">
+     {{form.brand()}}
+    </div>
+  </div>
+
+    <div class="form-group row ">
+    <label for="packaging" class="col-sm-2 p-lg-1  col-form-label">{{form.packaging.label}}</label>
+    <div class="col-sm-10" id = "packaging">
+      {{form.packaging()}}
+    </div>
+
+      </div>
+
+    <div class="form-group row ">
+    <label for="initials" class="col-sm-2 p-lg-1  col-form-label">{{form.initial.label}}</label>
+    <div class="col-sm-10" id = "initials">
+      {{form.initial()}}
+    </div>
+    </div>
+<div>{{form.submit(class="btn btn-success")}}</div>
+
+
+
+</form>
+  </div>
+</div>
+{%endblock%}

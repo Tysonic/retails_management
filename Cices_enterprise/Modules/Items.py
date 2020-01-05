@@ -15,7 +15,7 @@ class Items(db.Model):
     brand = db.Column(db.Integer, db.ForeignKey('ItemBrands.brand_id'))
     unit = db.Column(db.Integer, db.ForeignKey('ItemUnits.unit_id'))
     packaging = db.Column(db.Integer, db.ForeignKey('ItemPackaging.packaging_id'))
-    stock = db.Column(db.Integer, default=0)
+    stock = db.Column(db.Integer)
     created_by = db.Column(db.String)
     created_at = db.Column(db.DateTime, default=datetime.utcnow())
     updated_by = db.Column(db.String, default="")
@@ -23,10 +23,8 @@ class Items(db.Model):
     sales = db.relationship('Sales', backref='sales')
     purchases = db.relationship('Purchases', backref='purchase')
 
-    # image = db.relationship("Images", backref='image')
-
-    def __init__(self, stock,name,item, created_by,   size, brand, unit,
-                 packaging, updated_at=None,  updated_by=""):
+    def __init__(self,  name, item, created_by, size, brand, unit,
+                 packaging, updated_at=None,stock=0, updated_by=""):
         self.name = name
         self.unit = unit
         self.item = item
@@ -39,4 +37,4 @@ class Items(db.Model):
         self.created_by = created_by
 
     def __repr__(self):
-        return f"{self.name,self.item, self.unit, self.size, self.brand, self.packaging,self.created_by, self.created_at, self.updated_at, self.updated_by, self.stock} "
+        return f"{self.name, self.item, self.unit, self.size, self.brand, self.packaging, self.created_by, self.created_at, self.updated_at, self.updated_by, self.stock} "

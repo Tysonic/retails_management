@@ -27,7 +27,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      {%if current_user.is_authenticated%}
+
            <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle navbar-brand" href="{{url_for('Items.list_of_items')}}" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Items
@@ -85,6 +85,7 @@
       <li>
         <a class="navbar-brand" href="{{url_for('Advanced.advanced')}}">Advanced</a>
       </li>
+      {%if current_user.is_authenticated%}
 
       {% endif%}
 

@@ -5,7 +5,7 @@ from Cices_enterprise import db
 
 class Purchases(db.Model):
     __tablename__ = "Purchases"
-    purchase_id= db.Column(db.Integer, primary_key=True)
+    _Id= db.Column(db.Integer, primary_key=True)
     unit_price = db.Column(db.Integer, nullable=False)
     purchase_date = db.Column(db.Date, default=datetime.datetime.utcnow())
     recorded_at = db.Column(db.DateTime, default=datetime.datetime.utcnow())

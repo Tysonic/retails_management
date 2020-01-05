@@ -1,8 +1,8 @@
 """empty message
 
-Revision ID: c82602242dc7
+Revision ID: dbcb58f7254d
 Revises: 
-Create Date: 2019-12-18 19:18:54.160453
+Create Date: 2020-01-05 19:18:14.729021
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'c82602242dc7'
+revision = 'dbcb58f7254d'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -40,7 +40,7 @@ def upgrade():
     sa.PrimaryKeyConstraint('unit_id')
     )
     op.create_table('Staffs',
-    sa.Column('Id', sa.Integer(), nullable=False),
+    sa.Column('_Id', sa.Integer(), nullable=False),
     sa.Column('user_name', sa.String(), nullable=True),
     sa.Column('first_name', sa.String(), nullable=True),
     sa.Column('other_name', sa.String(), nullable=True),
@@ -50,7 +50,7 @@ def upgrade():
     sa.Column('role', sa.String(), nullable=True),
     sa.Column('telephone_contact', sa.String(), nullable=True),
     sa.Column('email', sa.String(), nullable=True),
-    sa.PrimaryKeyConstraint('Id')
+    sa.PrimaryKeyConstraint('_Id')
     )
     op.create_table('State',
     sa.Column('_Id', sa.Integer(), nullable=False),
@@ -102,7 +102,7 @@ def upgrade():
     )
     op.create_index(op.f('ix_Items__Id'), 'Items', ['_Id'], unique=False)
     op.create_table('Purchases',
-    sa.Column('purchase_id', sa.Integer(), nullable=False),
+    sa.Column('_Id', sa.Integer(), nullable=False),
     sa.Column('unit_price', sa.Integer(), nullable=False),
     sa.Column('purchase_date', sa.Date(), nullable=True),
     sa.Column('recorded_at', sa.DateTime(), nullable=True),
@@ -112,7 +112,7 @@ def upgrade():
     sa.Column('quantity_purchased', sa.Integer(), nullable=False),
     sa.Column('item_purchased', sa.Integer(), nullable=True),
     sa.ForeignKeyConstraint(['item_purchased'], ['Items._Id'], ),
-    sa.PrimaryKeyConstraint('purchase_id')
+    sa.PrimaryKeyConstraint('_Id')
     )
     op.create_table('Sales',
     sa.Column('_Id', sa.Integer(), nullable=False),

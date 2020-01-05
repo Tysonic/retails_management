@@ -11,19 +11,19 @@
     </tr>
 {% for item in items%}
 
-        {%for val in data_list.ItemNameList()%}
+        {%for val in data_list.item_names()%}
         {%if item.name==val.name_id%}
         <td>{{val.name}}
             {%endif%}
         {%endfor%}
 
-    {%for val in data_list.ItemUnitList()%}
+    {%for val in data_list.item_units()%}
         {%if item.unit==val.unit_id%}
     <td>{{item.size}}{{val.unit}}</td>
             {%endif%}
         {%endfor%}
 
-    {%for val in data_list.ItemPackagingList()%}
+    {%for val in data_list.item_packaging()%}
         {%if item.packaging==val.packaging_id%}
         <td>{{val.packaging}}
             {%endif%}
@@ -31,9 +31,9 @@
     <td>{{item.stock}}</td>
         <td>
             <form method="post" action="Items.details.html">
-                <a href="{{ url_for('Items.details', _id=item._Id)}}" >Details </a>
+                <a href="{{ url_for('Items.item_details', _id=item._Id)}}" >Details </a>
                 <a href="{{ url_for('Items.edit_item', _id=item._Id)}}">Edit</a>
-                <a href="" >Trash</a>
+                <a href="{{url_for('Items.trash_item', _id=item._Id)}}" >Trash</a>
             </form>
 
         </td>

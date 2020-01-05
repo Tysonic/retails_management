@@ -3,7 +3,7 @@ from datetime import datetime
 
 class Staffs(db.Model):
     __tablename__ = 'Staffs'
-    Id = db.Column(db.Integer, primary_key=True)
+    _Id = db.Column(db.Integer, primary_key=True)
     user_name = db.Column(db.String)
     first_name = db.Column(db.String)
     other_name = db.Column(db.String)
