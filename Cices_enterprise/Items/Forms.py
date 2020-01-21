@@ -9,5 +9,5 @@ class AddItem(FlaskForm):
     packaging = SelectField(label="Packaging", coerce=int)
     brand = SelectField(label="Brand", coerce=int)
     initial = IntegerField("Initial Value")
-
     submit = SubmitField("Save")
+    update = SubmitField('Update')

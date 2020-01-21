@@ -15,4 +15,4 @@ class Sales(db.Model):
     item_sold = db.Column(db.Integer, db.ForeignKey('Items._Id'))
 
     def __repr__(self):
-        return f"{self.unit_price, self.quantity_sold, self.sold_by, self.recorded_at, self.item_sold}"
+        return f"{self.unit_price, self.quantity_sold, self.sold_by, self.recorded_at, self.item_sold, self.updated_by, self.updated_at,self.sold_on}"

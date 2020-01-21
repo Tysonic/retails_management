@@ -4,7 +4,7 @@ from Cices_enterprise import db
 
 
 class Users(db.Model, UserMixin):
-    __tablename__ = "Users"
+    __tablename__ = "Users" 
     # __bind_key__="Accounts"
     id = db.Column(db.Integer, primary_key=True, index=True)
     email = db.Column(db.String(64), unique=True, index=True)

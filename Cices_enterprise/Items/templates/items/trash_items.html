@@ -13,5 +13,7 @@
 </table>
 
 
-<a href="{{url_for('Items.delete', _id=values._Id)}}">Delete</a>
+<a href="{{url_for('Items.delete', _id=values._Id)}} " class="btn btn-danger ">Delete</a>
+
+<a href="{{url_for('Items.list_of_items')}}" class="btn btn-primary float-right">Back to list</a>
 {%endblock%}

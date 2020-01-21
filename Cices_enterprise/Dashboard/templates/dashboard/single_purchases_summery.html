@@ -1,0 +1,31 @@
+{%extends"base.html"%}
+{%block content %}
+
+
+
+{%for item in items%}
+{%if item._Id==purchases[0].item_purchased%}
+<h2>{{item.item}}</h2>
+{%endif%}
+{%endfor%}
+
+
+
+<table class="table table-striped table-bordered">
+{%for values in purchases%}
+        <tr><td>unit price : {{values.unit_price}}<br>
+        Quantity Purchased : {{values.quantity_purchased}}<br>
+        Total Price : {{values.unit_price*values.quantity_purchased}}<br>
+        Purchased By : {{values.purchased_by}}<br>
+        Purchased On: {{values.date_purchased}}<br>
+        Recorded At : {{values.recorded_at}}<br>
+        Updated By : {{values.updated_by}}<br>
+        Updated At : {{values.updated_at}}<br>
+            Status :active!</td></tr>
+{%endfor%}
+</table>
+
+<a href="{{url_for('Dashboard.dashboard')}}" class="btn btn-primary float-right">Back to Dashboard</a>
+
+{%endblock%}
+

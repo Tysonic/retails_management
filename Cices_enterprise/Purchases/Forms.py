@@ -12,3 +12,4 @@ class AddPurchase(FlaskForm):
     updated_at = DateTimeField("Updated At")
     updated_by = StringField("Updated By")
     submit = SubmitField("Save")
+    update = SubmitField("Update")

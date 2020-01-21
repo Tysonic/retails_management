@@ -1,0 +1,23 @@
+{%extends"base.html"%}
+{%block content %}
+{%if message%}
+<h2>{{message}}</h2>
+{%endif%}
+<table class="table table-striped table-bordered">
+    <tr><td>Item Sold :</td> <td>{{values.item_sold}}</td></tr>
+    <tr><td>unit price :</td> <td>{{values.unit_price}}</td></tr>
+    <tr><td>Quantity Sold :</td><td>{{values.quantity_sold}}</td></tr>
+    <tr><td>Total Price :</td> <td>{{values.unit_price*values.quantity_sold}}</td></tr>
+    <tr><td>Sold By :</td> <td>{{values.sold_by}}</td></tr>
+    <tr><td>Sold On :</td><td>{{values.sold_on}}</td></tr>
+    <tr><td>Recorded At :</td><td>{{values.recorded_at}}</td></tr>
+    <tr><td>Updated By :</td><td> {{values.updated_by}}</td></tr>
+    <tr><td>Updated At :</td><td>{{values.updated_at}}</td></tr>
+    <tr><td>Status</td><td>active!</td></tr>
+
+</table>
+
+<a href="{{url_for('Sales.list_of_sales')}}" class="btn btn-primary float-right">Back to list</a>
+
+{%endblock%}
+

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{%block content%}
+
+
+<h2 style="text-align: center;padding-bottom: 3%">  Cice Shoppers Dashboard</h2>
+
+<table class="table table-striped">
+    <tr>
+        <th>Items Purchased</th>
+        <th>Quantity Purchased</th>
+        <th>Total Amount</th>
+        <td></td>
+
+    </tr>
+
+    {%for item in items%}
+        <tr>
+
+
+            {%if item._Id in quantity.keys()%}
+            <td>{{item.item}}</td>
+        <td>{{quantity[item._Id]}}</td>
+
+            {%endif%}
+
+            {%if item._Id in price.keys()%}
+
+                <td>{{price[item._Id]}}</td>
+            <th><a href="{{url_for('Dashboard.single_purchases_details',_id=item._Id)}}">Details</a></th>
+            {%endif%}
+
+
+    </tr>
+    {%endfor%}
+</table>
+<a href="{{url_for('Dashboard.dashboard')}}" class="btn btn-primary float-right">Back to Dashboard</a>
+{%endblock%}

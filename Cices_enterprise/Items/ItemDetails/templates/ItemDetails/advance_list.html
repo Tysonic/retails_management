@@ -1,0 +1,65 @@
+{% extends "base.html"%}
+
+{%block content%}
+
+<nav>
+
+
+    <table class="table table-striped float-left" style="width:25%; background:#ccc;">
+    <tr>
+        <th style="background:#888;">Names</th>
+    </tr>
+    {%for name in names%}
+    <tr>
+
+        <td>{{name.name}}</td>
+
+    </tr>
+    {%endfor%}
+
+</table>
+
+<table class="table table-striped float-left" style="width:25%; background:#cba;">
+    <tr>
+        <th style="background:#888;">Packaging</th>
+    </tr>
+    {%for package in packaging%}
+    <tr>
+
+        <td>{{package.packaging}}</td>
+
+    </tr>
+    {%endfor%}
+
+</table>
+
+<table class="table table-striped float-left" style="width:25%; background:#bca;">
+    <tr>
+        <th style="background:#888;">Units</th>
+    </tr>
+    {%for unit in units%}
+    <tr>
+
+        <td>{{unit.unit}}</td>
+
+    </tr>
+    {%endfor%}
+
+</table>
+
+<table class="table table-striped" style="width:25%; background:#abc;">
+    <tr>
+        <th style="background:#888;">Brands</th>
+    </tr>
+    {%for brand in brands%}
+    <tr>
+
+        <td>{{brand.brand}}</td>
+
+    </tr>
+    {%endfor%}
+
+</table>
+
+    </nav>
+{%endblock%}

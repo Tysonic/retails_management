@@ -1,0 +1,33 @@
+{%extends"base.html"%}
+{%block content %}
+{%if message%}
+<h2>{{message}}</h2>
+{%endif%}
+
+
+{%for item in items%}
+{%if item._Id==sales[0].item_sold%}
+<h2>{{item.item}}</h2>
+{%endif%}
+{%endfor%}
+
+
+
+<table class="table table-striped table-bordered">
+{%for values in sales%}
+        <tr><td>unit price : {{values.unit_price}}<br>
+        Quantity Sold : {{values.quantity_sold}}<br>
+        Total Price : {{values.unit_price*values.quantity_sold}}<br>
+        Sold By : {{values.sold_by}}<br>
+        Sold On : {{values.sold_on}}<br>
+        Recorded At : {{values.recorded_at}}<br>
+        Updated By : {{values.updated_by}}<br>
+        Updated At : {{values.updated_at}}<br>
+            Status :active!</td></tr>
+{%endfor%}
+</table>
+
+<a href="{{url_for('Dashboard.dashboard')}}" class="btn btn-primary float-right">Back to Dashboard</a>
+
+{%endblock%}
+

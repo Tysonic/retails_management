@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{%block content%}
+
+
+<h2 style="text-align: center;padding-bottom: 3%">  Cice Shoppers Dashboard</h2>
+
+<table class="table table-striped">
+    <tr>
+        <th>Attributes</th>
+        <th>Amount</th>
+        <td></td>
+
+    </tr>
+    <tr>
+        <td>Total Sales : </td>
+        <td>{{total_sales}}</td>
+        <th><a href="{{url_for('Dashboard.sales_summery')}}">Details</a></th>
+    </tr>
+
+        <tr>
+        <td>Total Purchases : </td>
+        <td>{{total_purchases}}</td>
+            <th><a href="{{url_for('Dashboard.purchases_summery')}}">Details</a></th>
+    </tr>
+</table>
+{%endblock%}

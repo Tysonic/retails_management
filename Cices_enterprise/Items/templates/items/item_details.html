@@ -7,8 +7,20 @@
     <tr><td>Created At :</td><td>{{values.created_at}}</td></tr>
     <tr><td>Updated By :</td><td> {{values.updated_by}}</td></tr>
     <tr><td>Updated At :</td><td>{{values.updated_at}}</td></tr>
-        <tr><td>Status</td><td>active!</td></tr>
+    <tr><td>Status</td><td>active!</td></tr>
+    <tr><td>Stock</td>
+    <td>
+        {%for stock in stocks%}
+        {%if stock==values._Id%}
+        {{stocks[stock]}}
+        {%endif%}
+        {% endfor%}
+        {% if values._Id not in stocks.keys()%}
+        0
+        {%endif%}
+    </td></tr>
 </table>
 
 
+<a href="{{url_for('Items.list_of_items')}}" class="btn btn-primary float-right">Back to list</a>
 {%endblock%}

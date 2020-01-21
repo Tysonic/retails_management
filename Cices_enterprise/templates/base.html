@@ -27,7 +27,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-
+{%if current_user.is_authenticated%}
            <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle navbar-brand" href="{{url_for('Items.list_of_items')}}" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Items
@@ -71,22 +71,13 @@
         </div>
       </li>
 
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle navbar-brand" href="{{url_for('Staffs.list_of_staffs')}}" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Media
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{url_for('ItemImage.uploader')}}">Upload Image</a>
-          <a class="dropdown-item" href="{{url_for('ItemImage.image_gallery')}}">Gallery</a>
-
-        </div>
-      </li>
       <li>
         <a class="navbar-brand" href="{{url_for('Advanced.advanced')}}">Advanced</a>
       </li>
-      {%if current_user.is_authenticated%}
 
+        <li>
+        <a class="navbar-brand" href="{{url_for('Dashboard.dashboard')}}">Dashboard</a>
+      </li>
       {% endif%}
 
     </ul>
@@ -121,7 +112,8 @@
 {% block content %}
 
 {% endblock %}
-{%block footer%}<div style="text-align: center; ">All rights reserved @Cice righte ent 2019 </div>{%endblock%}
+
+{%block footer%}<hr><div style="text-align: center">All rights reserved @Cice righte ent 2019 </div>{%endblock%}
 </div>
 
 

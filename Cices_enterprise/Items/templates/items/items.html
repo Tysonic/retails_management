@@ -11,24 +11,40 @@
     </tr>
 {% for item in items%}
 
-        {%for val in data_list.item_names()%}
-        {%if item.name==val.name_id%}
+        {%for val in names%}
+        {%if item.name==val._Id%}
         <td>{{val.name}}
             {%endif%}
         {%endfor%}
 
-    {%for val in data_list.item_units()%}
-        {%if item.unit==val.unit_id%}
+    {%for val in units%}
+        {%if item.unit==val._Id%}
     <td>{{item.size}}{{val.unit}}</td>
             {%endif%}
         {%endfor%}
 
-    {%for val in data_list.item_packaging()%}
-        {%if item.packaging==val.packaging_id%}
-        <td>{{val.packaging}}
+    {%for val in packaging%}
+        {%if item.packaging==val._Id%}
+    <td>{{val.packaging}}</td>
             {%endif%}
         {%endfor%}
-    <td>{{item.stock}}</td>
+
+
+
+    <td>
+        {%for stock in stocks%}
+        {%if stock==item._Id%}
+        {{stocks[stock]}}
+        {%endif%}
+        {% endfor%}
+        {% if item._Id not in stocks.keys()%}
+        0
+        {%endif%}
+    </td>
+
+
+
+
         <td>
             <form method="post" action="Items.details.html">
                 <a href="{{ url_for('Items.item_details', _id=item._Id)}}" >Details </a>
