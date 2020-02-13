@@ -5,6 +5,8 @@
 
 <h2 style="text-align: center;padding-bottom: 3%">  Cice Shoppers Dashboard</h2>
 
+<h2>Summary of :</h2>
+
 <table class="table table-striped">
     <tr>
         <th>Attributes</th>
@@ -14,14 +16,27 @@
     </tr>
     <tr>
         <td>Total Sales : </td>
-        <td>{{total_sales}}</td>
+        <td>Shs: {{total_sales}}</td>
         <th><a href="{{url_for('Dashboard.sales_summery')}}">Details</a></th>
     </tr>
 
-        <tr>
+    <tr>
         <td>Total Purchases : </td>
-        <td>{{total_purchases}}</td>
+        <td>Shs: {{total_purchases}}</td>
             <th><a href="{{url_for('Dashboard.purchases_summery')}}">Details</a></th>
+    </tr>
+
+
+    <tr>
+        {%if profits >=0%}
+        <td>Profit : </td>
+        <td>Shs: {{profits}}</td>
+        {%else%}
+         <td>Loss : </td>
+        <td>Shs: {{loss}}</td>
+        {%endif%}
+
+            <th><a href="{{url_for('Dashboard.profit_details')}}">Details</a></th>
     </tr>
 </table>
 {%endblock%}

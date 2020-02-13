@@ -1,0 +1,32 @@
+{% extends "base.html"%}
+
+{%block content%}
+
+<table class="table table-striped">
+    <tr style="background: #888">
+        <td>Item</td>
+        <td>Status</td>
+        <td>Value</td>
+        <td></td>
+
+    </tr>
+    {%for profit in profits%}
+    <tr>
+        {% for item in items%}
+        {%if item._Id==profit%}
+        <td>{{item.item}}</td>
+        {%if profits[profit] >= 0%}
+        <td>Profit</td>
+        <td>{{profits[profit]}}</td>
+        {%else%}
+        <td>Loss</td>
+        <td>{{profits[profit]}}</td>
+        {%endif%}
+        <td><a href="">Details</a></td>
+        {%endif%}
+       {%endfor%}
+    </tr>
+    {%endfor%}
+</table>
+<a href="{{url_for('Dashboard.dashboard')}}" class="btn btn-primary float-right">Back to Dashboard</a>
+{%endblock%}

@@ -1,8 +1,8 @@
-from flask_login import current_user
+from flask_login import current_user, login_required
 from Cices_enterprise import db
 from flask import render_template, redirect, url_for
 from Cices_enterprise.Computations import Query
-from Cices_enterprise.Computations.Query import query_all, query_one, current_stock
+from Cices_enterprise.Computations.Stock import current_stock
 from Cices_enterprise.Computations.dropdowns import name_form_choice, packaging_form_choice, unit_form_choice, \
     brand_form_choice
 from Cices_enterprise.Modules import ItemDetails
@@ -26,6 +26,7 @@ def item(_id):
 ########## Add items
 #######################
 @items_blueprint.route("/items/add new item", methods=["GET", "POST"])
+@login_required
 def add_item():
     form = AddItem()
     brand_form_choice(form)

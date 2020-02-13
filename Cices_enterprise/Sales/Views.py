@@ -1,6 +1,7 @@
 from flask_login import current_user
 from wtforms import ValidationError
-from Cices_enterprise.Computations.Query import current_stock, query_one
+from Cices_enterprise.Computations.Query import query_one
+from Cices_enterprise.Computations.Stock import current_stock
 from Cices_enterprise.Computations.dropdowns import sales_dropdown
 from Cices_enterprise.Modules.Sales import Sales
 from Cices_enterprise.Sales.Forms import AddSales
