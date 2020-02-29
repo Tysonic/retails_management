@@ -91,7 +91,7 @@ def register():
             db.session.add(new_user)
             db.session.commit()
             flash("Registered successfully  ")
-            return redirect(url_for("Users.login"))
+            return redirect(url_for("login"))
         return render_template("register.html", form=form)
     except Exception as e:
         return render_template("register.html", error=e, form=form)
