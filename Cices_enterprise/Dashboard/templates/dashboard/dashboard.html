@@ -27,16 +27,21 @@
     </tr>
 
 
-    <tr>
-        {%if profits >=0%}
+    {%if profits >=0%}
+    <tr style="background:#2d2;" >
+
         <td>Profit : </td>
         <td>Shs: {{profits}}</td>
-        {%else%}
-         <td>Loss : </td>
-        <td>Shs: {{loss}}</td>
-        {%endif%}
-
-            <th><a href="{{url_for('Dashboard.profit_details')}}">Details</a></th>
+        <th><a href="{{url_for('Dashboard.profit_details')}}">Details</a></th>
     </tr>
+    {%else%}
+        <tr style="background:#d88;">
+
+            <td>Loss : </td>
+            <td>Shs: {{loss}}</td>
+            <th><a href="{{url_for('Dashboard.profit_details')}}">Details</a></th>
+        </tr>
+    {%endif%}
+
 </table>
 {%endblock%}

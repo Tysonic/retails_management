@@ -27,6 +27,22 @@
        {%endfor%}
     </tr>
     {%endfor%}
+    {%if p_total >=0%}
+    <tr style="background:#2d2;" >
+        <td>Total</td>
+        <td>Profit : </td>
+        <td>Shs: {{p_total}}</td>
+        <td>Great work</td>
+    </tr>
+    {%else%}
+        <tr style="background:#d22;">
+            <td>Total</td>
+            <td>Loss : </td>
+            <td>Shs: {{l_total}}</td>
+            <td>Improve performance</td>
+        </tr>
+    {%endif%}
 </table>
+
 <a href="{{url_for('Dashboard.dashboard')}}" class="btn btn-primary float-right">Back to Dashboard</a>
 {%endblock%}

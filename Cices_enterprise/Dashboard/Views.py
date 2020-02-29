@@ -94,4 +94,6 @@ def single_purchases_details(_id):
 def profit_details():
     profit = profits()
     items =query_all(Items)
-    return render_template("profits_summary.html", profits = profit, items = items)
+    total = sum(profit.values())
+    loss = abs(sum(profit.values()))
+    return render_template("profits_summary.html", profits = profit, items = items, p_total = total,l_total=abs(sum(profit.values())),)
