@@ -1,5 +1,5 @@
 {% extends "bootstrap/base.html" %}
-{% block title %}Cice tailoring enterprise{% endblock %}
+{% block title %}Retail Management system{% endblock %}
 
 {% block navbar %}
 {%block styles%}
@@ -27,12 +27,12 @@
     <ul class="navbar-nav mr-auto">
 {%if current_user.is_authenticated%}
            <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle navbar-brand" href="{{url_for('Items.list_of_items')}}" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle navbar-brand" href="{{url_for('items.list_of_items')}}" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Items
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{url_for('Items.add_item')}}">New Items</a>
-          <a class="dropdown-item" href="{{url_for('Items.list_of_items')}}">List of items</a>
+          <a class="dropdown-item" href="{{url_for('items.add_item')}}">New Items</a>
+          <a class="dropdown-item" href="{{url_for('items.list_of_items')}}">List of items</a>
         </div>
       </li>
 
@@ -41,40 +41,38 @@
           Purchases
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{url_for('Purchases.add_purchase_record')}}">New Purchase</a>
-          <a class="dropdown-item" href="{{url_for('Purchases.list_of_purchases')}}">List of purchases</a>
+          <a class="dropdown-item" href="{{url_for('purchases.add_purchase_record')}}">New Purchase</a>
+          <a class="dropdown-item" href="{{url_for('purchases.list_of_purchases')}}">List of purchases</a>
 
         </div>
       </li>
 
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle navbar-brand" href="{{url_for('Sales.list_of_sales')}}" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle navbar-brand" href="{{url_for('sales.list_of_sales')}}" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Sales
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{url_for('Sales.add_new_sales')}}">New Sales</a>
-          <a class="dropdown-item" href="{{url_for('Sales.list_of_sales')}}">List of Sales</a>
+          <a class="dropdown-item" href="{{url_for('sales.add_new_sales')}}">New Sales</a>
+          <a class="dropdown-item" href="{{url_for('sales.list_of_sales')}}">List of Sales</a>
         </div>
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle navbar-brand" href="{{url_for('Staffs.list_of_staffs')}}" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle navbar-brand" href="{{url_for('staffs.list_of_staffs')}}" class="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Staffs
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{url_for('Staffs.add_staff')}}">New Staff</a>
-          <a class="dropdown-item" href="{{url_for('Staffs.list_of_staffs')}}">List of Staffs</a>
+          <a class="dropdown-item" href="{{url_for('staffs.add_staff')}}">New Staff</a>
+          <a class="dropdown-item" href="{{url_for('staffs.list_of_staffs')}}">List of Staffs</a>
 
         </div>
       </li>
 
-      <li>
-        <a class="navbar-brand" href="{{url_for('Advanced.advanced')}}">Advanced</a>
-      </li>
+
 
         <li>
-        <a class="navbar-brand" href="{{url_for('Dashboard.dashboard')}}">Dashboard</a>
+        <a class="navbar-brand" href="{{url_for('dashboard.dashboard')}}">Dashboard</a>
       </li>
       {% endif%}
 
@@ -85,16 +83,16 @@
       {%if current_user.is_authenticated%}
       <li class="nav-item nav-link nav-end">Hi! {{current_user.username}}</li>
       <li class="nav-item nav-end">
-        <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
+        <a class="nav-link" href="{{url_for('accounts.logout')}}">Logout</a>
       </li>
 
 
       {%else%}
       <li class="nav-item ">
-        <a class="nav-link navbar-brand" href="{{url_for('login')}}">login</a>
+        <a class="nav-link navbar-brand" href="{{url_for('accounts.login')}}">login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link navbar-brand" href="{{url_for('register')}}">register</a>
+        <a class="nav-link navbar-brand" href="{{url_for('accounts.register')}}">register</a>
       </li>
       {%endif%}
     </ul>

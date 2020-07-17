@@ -1,5 +1,5 @@
 import re
-from Retails.modules.Accounts import Users
+from Retails.modules.Accounts import Accounts
 from flask_wtf import FlaskForm
 from werkzeug.routing import ValidationError
 from wtforms import SubmitField, PasswordField, StringField
@@ -17,12 +17,12 @@ class UserRegitrationForm(FlaskForm):
 
 
     def check_email(self, field):
-        if Users.query.filter_by(self.email == field.data).first():
+        if Accounts.query.filter_by(self.email == field.data).first():
             raise ValidationError("your email has already been registered")
 
 
     def check_username(self, field):
-        if Users.query.filter_by(self.username == field.data).first():
+        if Accounts.query.filter_by(self.username == field.data).first():
             raise ValidationError("Username already exitst")
 
     def check_password(self, field):

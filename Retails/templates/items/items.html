@@ -3,53 +3,30 @@
 
 <table class="table table-striped table-bordered">
     <tr style="background: #888">
-        <td>Item</td>
-        <td>Details</td>
-        <td>Packaging</td>
-        <td>Current Stock</td>
+        <td>Name</td>
+        <td>unit stock</td>
+        <td>unit sales</td>
+        <td>sales per stock</td>
+        <td>size</td>
+        <td>category</td>
+
         <td></td>
     </tr>
 {% for item in items%}
 
-        {%for val in names%}
-        {%if item.name==val._Id%}
-        <td>{{val.name}}
-            {%endif%}
-        {%endfor%}
-
-    {%for val in units%}
-        {%if item.unit==val._Id%}
-    <td>{{item.size}}{{val.unit}}</td>
-            {%endif%}
-        {%endfor%}
-
-    {%for val in packaging%}
-        {%if item.packaging==val._Id%}
-    <td>{{val.packaging}}</td>
-            {%endif%}
-        {%endfor%}
-
-
-
-    <td>
-        {%for stock in stocks%}
-        {%if stock==item._Id%}
-        {{stocks[stock]}}
-        {%endif%}
-        {% endfor%}
-        {% if item._Id not in stocks.keys()%}
-        0
-        {%endif%}
-    </td>
-
-
+    <td>{{item.name}}</td>
+    <td>{{item.unit_stock}}</td>
+    <td>{{item.unit_sales}}</td>
+    <td>{{item.sales_per_stock}}</td>
+    <td>{{item.size}}</td>
+    <td>{{item.category}}</td>
 
 
         <td>
-            <form method="post" action="Items.details.html">
-                <a href="{{ url_for('Items.item_details', _id=item._Id)}}" >Details </a>
-                <a href="{{ url_for('Items.edit_item', _id=item._Id)}}">Edit</a>
-                <a href="{{url_for('Items.trash_item', _id=item._Id)}}" >Trash</a>
+            <form method="post" action="items.details.html">
+                <a href="{{ url_for('items.item_details', _id=item.id)}}" >Details </a>
+                <a href="{{ url_for('items.edit_item', _id=item.id)}}">Edit</a>
+                <a href="{{url_for('items.trash_item', _id=item.id)}}" >Trash</a>
             </form>
 
         </td>

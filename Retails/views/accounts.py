@@ -6,17 +6,18 @@ from flask_login import login_required, login_user, logout_user
 from wtforms import ValidationError
 
 from Retails import App, db
+from Retails.forms.accounts import UserLoginForm, UserRegitrationForm
 from Retails.modules.Accounts import Accounts
 from flask import Blueprint
 
-accounts_blueprint = Blueprint('accounts',__name__,template_folder='templates/accounts')
+accounts_blueprint = Blueprint('accounts',__name__,template_folder='../templates/accounts')
 
-@App.route("/login page", methods=['GET', 'POST'])
+@accounts_blueprint.route("/login page", methods=['GET', 'POST'])
 def login():
     form = UserLoginForm()
     try:
         if form.validate_on_submit():
-            user = Users.query.filter_by(email=form.email.data).first()
+            user = Accounts.query.filter_by(email=form.email.data).first()
             if user is not None and check_password_hash(user.password_hash, form.password.data) :
 
                 login_user(user)
@@ -35,7 +36,7 @@ def login():
         return render_template("login.html", form=form, error =e)
 
 
-@App.route("/logout user")
+@accounts_blueprint.route("/logout user")
 @login_required
 def logout():
     logout_user()
@@ -43,16 +44,16 @@ def logout():
     return redirect(url_for("index"))
 
 
-@App.route("/registration page", methods=["GET", "POST"])
+@accounts_blueprint.route("/registration page", methods=["GET", "POST"])
 def register():
     form = UserRegitrationForm()
     try:
 
         if form.validate_on_submit():
 
-            if Users.query.filter_by(email=form.email.data).first():
+            if Accounts.query.filter_by(email=form.email.data).first():
                 raise ValidationError("your email has already been registered")
-            if Users.query.filter_by(username=form.username.data).first():
+            if Accounts.query.filter_by(username=form.username.data).first():
                 raise ValidationError("The User Name has already been taken Please Choose another name")
             if len(form.password.data)<8:
                 raise ValidationError("Password must be at least 8 characters long")
@@ -62,7 +63,7 @@ def register():
                 print(form.password.data)
                 raise ValidationError("This password must contain at least 1 uppercase character")
 
-            new_user = Users(username=form.username.data, email=form.email.data, password=form.password.data)
+            new_user = Accounts(username=form.username.data, email=form.email.data, password=form.password.data)
             db.session.add(new_user)
             db.session.commit()
             flash("Registered successfully  ")
@@ -70,7 +71,3 @@ def register():
         return render_template("register.html", form=form)
     except Exception as e:
         return render_template("register.html", error=e, form=form)
-
-
-
-
