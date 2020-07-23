@@ -20,162 +20,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a50ef3b-aa29-4964-8152-bacab7fa91bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Retails/CiceDB" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/versions/fb51a44b8c31_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scratch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/_compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/dnssec.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/e164.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/edns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/entropy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/exception.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/flags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/grange.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/hash.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/inet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/ipv4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/ipv6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/message.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/namedict.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/node.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/opcode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/py.typed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/query.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rcode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdataclass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdatatype.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/AFSDB.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/AVC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/CAA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/CDNSKEY.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/CDS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/CERT.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/CNAME.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/CSYNC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/DLV.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/DNAME.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/DNSKEY.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/DS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/EUI48.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/EUI64.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/GPOS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/HINFO.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/HIP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/ISDN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/LOC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/MX.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/NS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/NSEC.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/NSEC3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/NSEC3PARAM.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/OPENPGPKEY.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/PTR.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/RP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/RRSIG.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/RT.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/SOA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/SPF.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/SSHFP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/TLSA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/TXT.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/URI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/X25.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/ANY/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/CH/A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/CH/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/AAAA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/APL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/DHCID.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/IPSECKEY.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/KX.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/NAPTR.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/NSAP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/NSAP_PTR.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/PX.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/SRV.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/WKS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/IN/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/dnskeybase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/dsbase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/euibase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/mxbase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/nsbase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rdtypes/txtbase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/renderer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/resolver.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/reversename.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/rrset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/set.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/tokenizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/tsig.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/tsigkeyring.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/ttl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/update.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/wiredata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dns/zone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dnspython-1.16.0.dist-info/DESCRIPTION.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dnspython-1.16.0.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dnspython-1.16.0.dist-info/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dnspython-1.16.0.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dnspython-1.16.0.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dnspython-1.16.0.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dnspython-1.16.0.dist-info/metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/dnspython-1.16.0.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/email_validator-1.1.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/email_validator-1.1.1.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/email_validator-1.1.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/email_validator-1.1.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/email_validator-1.1.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/email_validator-1.1.1.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/email_validator-1.1.1.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/email_validator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna-2.10.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna-2.10.dist-info/LICENSE.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna-2.10.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna-2.10.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna-2.10.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna-2.10.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna/codec.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna/compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna/core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna/idnadata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna/intranges.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna/package_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/idna/uts46data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Retail_Management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Retail_Management.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retails/forms/initials.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retails/modules/initials.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retails/templates/accounts/reset_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retails/templates/initials/add_initial_cash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retails/templates/initials/add_initial_items.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retails/templates/initials/list_initials.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retails/templates/items/item_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retails/templates/stocks/stock_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retails/views/initials.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Retails/views/stocks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-3.0.0.dev0-py3.8.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-3.0.0.dev0-py3.8.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-3.0.0.dev0-py3.8.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-3.0.0.dev0-py3.8.egg-info/installed-files.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-3.0.0.dev0-py3.8.egg-info/requires.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-3.0.0.dev0-py3.8.egg-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/CiceDB" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/CiceDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Retails/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/computations/Profits.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/computations/Profits.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/computations/Query.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/computations/Query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/computations/Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/computations/Stock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Retails/computations/dropdowns.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/computations/dropdowns.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/forms/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/forms/accounts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/forms/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/forms/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/modules/ItemDetails.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/forms/purchases.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/forms/Stocks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/forms/sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/forms/sales.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Retails/modules/Items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/modules/Items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/modules/Purchases.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/modules/Purchases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/modules/Purchases.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/modules/Stocks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Retails/modules/Sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/modules/Sales.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/templates/items/add_items.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/items/add_items.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/templates/items/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/items/items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/accounts/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/dashboard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/dashboard/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/items/add_items.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/items/item_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/items/advance_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/items/advanced.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/items/edit_items.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/items/item_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/items/item_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/items/items.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/items/list_items.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/purchases/add_purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/stocks/stock_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/purchases/edit_purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/stocks/stock_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/purchases/purchase_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/stocks/stock_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/purchases/purchases.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/purchases/trash_purchases.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/stocks/stock_trash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/sales/add_sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/sales/sale_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/sales/edit_sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/sales/sale_update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/sales/sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/sales/sale_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/sales/sales_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/sales/sale_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/sales/trash_sales.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/sales/sale_trash.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Retails/templates/shared/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/shared/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Retails/templates/shared/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/shared/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/templates/shared/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/shared/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/staffs/add_staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/staffs/add_staffs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/staffs/staffs.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/staffs/list_staffs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Retails/views/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/views/accounts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/views/dashboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/views/dashboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Retails/views/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/views/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/views/purchases.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/views/sales.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/views/sales.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/views/staffs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/views/staffs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/versions/fb51a44b8c31_.py" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/versions/b001f1d19ac2_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-2.4.3.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-2.4.3.dist-info/LICENSE.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-2.4.3.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-2.4.3.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-2.4.3.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/Flask_SQLAlchemy-2.4.3.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_bootstrap/templates/bootstrap/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_sqlalchemy/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_sqlalchemy/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_sqlalchemy/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.8/site-packages/flask_sqlalchemy/utils.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +99,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -203,12 +117,14 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Retails/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zuku_backend" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -316,30 +232,34 @@
       <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="416" y="150" width="534" height="506" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.31.1366.737@0.31.1366.737" timestamp="1594906855693" />
-    <state x="466" y="160" width="434" height="487" key="FileChooserDialogImpl" timestamp="1594645953054">
+    <state x="420" y="252" width="525" height="302" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1595272788389">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state x="466" y="160" width="434" height="487" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1594645953054" />
-    <state width="1343" height="174" key="GridCell.Tab.0.bottom" timestamp="1595011293440">
+    <state x="420" y="252" width="525" height="302" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.31.1366.737@0.31.1366.737" timestamp="1595272788389" />
+    <state x="466" y="160" width="434" height="487" key="FileChooserDialogImpl" timestamp="1595515565023">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1343" height="174" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1595011293440" />
-    <state width="1343" height="174" key="GridCell.Tab.0.center" timestamp="1595011293440">
+    <state x="466" y="160" width="434" height="487" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1595515565023" />
+    <state width="671" height="174" key="GridCell.Tab.0.bottom" timestamp="1595516160386">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1343" height="174" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1595011293440" />
-    <state width="1343" height="174" key="GridCell.Tab.0.left" timestamp="1595011293440">
+    <state width="671" height="174" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1595516160386" />
+    <state width="671" height="174" key="GridCell.Tab.0.center" timestamp="1595516160385">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1343" height="174" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1595011293440" />
-    <state width="1343" height="174" key="GridCell.Tab.0.right" timestamp="1595011293440">
+    <state width="671" height="174" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1595516160385" />
+    <state width="671" height="174" key="GridCell.Tab.0.left" timestamp="1595516160385">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1343" height="174" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1595011293440" />
-    <state x="172" y="35" width="1022" height="733" key="SettingsEditor" timestamp="1594645845230">
+    <state width="671" height="174" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1595516160385" />
+    <state width="671" height="174" key="GridCell.Tab.0.right" timestamp="1595516160385">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state x="172" y="35" width="1022" height="733" key="SettingsEditor/0.31.1366.737@0.31.1366.737" timestamp="1594645845230" />
+    <state width="671" height="174" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1595516160385" />
+    <state x="172" y="35" width="1022" height="733" key="SettingsEditor" timestamp="1595012135904">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state x="172" y="35" width="1022" height="733" key="SettingsEditor/0.31.1366.737@0.31.1366.737" timestamp="1595012135904" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1595010331432">
       <screen x="0" y="31" width="1366" height="737" />
     </state>

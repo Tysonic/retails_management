@@ -1,11 +1,11 @@
 from Retails.computations.Query import query_all
-from Retails.modules.Purchases import Purchases
+from Retails.modules.Stocks import Stocks
 from Retails.modules.Sales import Sales
 
 
 def profits():
     sales = query_all(Sales)
-    purchases = Purchases.query.order_by(Purchases._Id.desc()).all()
+    purchases = Stocks.query.order_by(Stocks.id.desc()).all()
     purchase_dict = {}
     sale_quantity_dict = {}
     sale_dict = {}

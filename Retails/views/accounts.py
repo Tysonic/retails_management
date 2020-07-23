@@ -15,6 +15,7 @@ accounts_blueprint = Blueprint('accounts',__name__,template_folder='../templates
 @accounts_blueprint.route("/login page", methods=['GET', 'POST'])
 def login():
     form = UserLoginForm()
+    image = url_for('static', filename='images/login.jpg')
     try:
         if form.validate_on_submit():
             user = Accounts.query.filter_by(email=form.email.data).first()
@@ -30,10 +31,17 @@ def login():
                 raise ValidationError("Password or username is incorrect ")
             return redirect(next)
 
-        return render_template("login.html", form=form)
+        return render_template("login.html", form=form, image=image)
     except Exception as e:
 
-        return render_template("login.html", form=form, error =e)
+        return render_template("login.html", form=form, error =e, image=image)
+
+@accounts_blueprint.route('/forgot password <email>')
+def forgot_password(email):
+    form = UserRegitrationForm()
+    Accounts.query.filter_by(email = email).update(dict(pasword=form.password.data))
+
+
 
 
 @accounts_blueprint.route("/logout user")

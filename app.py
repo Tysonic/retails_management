@@ -1,3 +1,4 @@
+from flask_login import login_required
 from Retails import App, login_manager
 from flask import render_template
 from Retails.modules.Accounts import Accounts
@@ -9,7 +10,8 @@ def load_user(user_id):
 
 
 @App.route("/")
-
+@App.route("/home")
+@login_required
 def index():
     return render_template("index.html")
 

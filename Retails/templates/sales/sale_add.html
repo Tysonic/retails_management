@@ -1,32 +1,34 @@
+
 {% extends "base.html"%}
 {%block content%}
 <div class="jumbotron">
   <div class="col-md-5 p-lg-10 mx-auto my-10" >
 <form method="post" >
     {{form.hidden_tag()}}
-
-
+  {%if error%}
+  <div >{{error}}</div>
+  {%endif%}
 
   <div class="form-group row">
-    <label for="size" class="col-sm-2 p-lg-1 ">{{form.item_purchased.label}}</label>
+    <label for="size" class="col-sm-2 p-lg-1 ">{{form.item.label}}</label>
     <div class="col-sm-10" id = "size">
-      {{form.item_purchased(class="form-control")}}
+      {{form.item(class="form-control")}}
     </div>
   </div>
 
     <div class="form-group row">
-    <label for="unit" class="col-sm-2 p-lg-1  col-form-label">{{form.unit_price.label}}</label>
+    <label for="unit" class="col-sm-2 p-lg-1  col-form-label">{{form.price.label}}</label>
     <div class="col-sm-10" id = "unit">
-     {{form.unit_price(class="form-control")}}
-    </div>
-  </div>
-    <div class="form-group row ">
-    <label for="quantity" class="col-sm-2 p-lg-1  col-form-label">{{form.quantity_purchased.label}}</label>
-    <div class="col-sm-10" id = "quantity">
-      {{form.quantity_purchased(class="form-control")}}
+     {{form.price(class="form-control")}}
     </div>
   </div>
 
+    <div class="form-group row ">
+    <label for="packaging" class="col-sm-2 p-lg-1  col-form-label">{{form.quantity.label}}</label>
+    <div class="col-sm-10" id = "packaging">
+      {{form.quantity(class="form-control")}}
+    </div>
+  </div>
   <div class="form-group row ">
     <label for="amount" class="col-sm-2 p-lg-1  col-form-label">Amount</label>
     <div class="col-sm-10" id = "amount"><del>Sum of amount used for purchase</del></div>

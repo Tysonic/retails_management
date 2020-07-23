@@ -1,0 +1,39 @@
+
+{% extends "base.html"%}
+{%block content%}
+
+<table class="table table-striped">
+    <tr style="background: #888">
+        <td>{{form.item_purchased.label}}</td>
+        <td>{{form.unit_price.label}}</td>
+        <td>{{form.purchase_date.label}}</td>
+        <td>{{form.quantity_purchased.label}}</td>
+        <td>Amount</td>
+        <td></td>
+    </tr>
+    {%for stock in stocks%}
+    <tr>
+        {% for item in items%}
+        {%if stock.item_purchased==item.id%}
+        <td>{{item.name+" "+item.size}}</td>
+
+        {%endif%}
+        {%endfor%}
+
+        <td>{{stock.unit_price}}</td>
+        <td>{{stock.purchase_date}}</td>
+        <td>{{stock.quantity_purchased}}</td>
+        <td>{{stock.unit_price*stock.quantity_purchased}}</td>
+        <td>
+            <form method="post" action="Items.details.html">
+                <a href="{{ url_for('stocks.stock_details', _id=stock.id)}}" >Details </a>
+                <a href="{{ url_for('stocks.stock_update', _id=stock.id)}}">Edit</a>
+<!--                <a href="{{url_for('stocks.stock_trash', _id=stockd)}}" >Trash</a>-->
+            </form>
+
+        </td>
+    </tr>
+    {%endfor%}
+</table>
+
+{%endblock%}

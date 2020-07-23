@@ -1,0 +1,38 @@
+
+{%extends"base.html"%}
+{%block content%}
+<table class="table table-striped">
+    <tr>
+        <td>{{form.item.label}}</td>
+        <td>{{form.price.label}}</td>
+        <td>{{form.quantity.label}}</td>
+        <td>Amount</td>
+
+        <td></td>
+    </tr>
+    {%for sale in sales%}
+    <tr>
+        {%for item in items %}
+        {%if item.id==sale.item%}
+        <td>{{item.name +" " +item.size}}</td>
+        {%endif%}
+        {%endfor%}
+
+        <td>{{sale.price}}</td>
+        <td>{{sale.quantity}}</td>
+        <td>{{ sale.price * sale.quantity}}</td>
+
+                <td>
+            <form method="post" action="Items.details.html">
+                <a href="{{ url_for('sales.sale_details', _id=sale._Id)}}" >Details </a>
+                <a href="{{ url_for('sales.sale_update', _id=sale._Id)}}">Edit</a>
+                <a href="{{url_for('sales.sale_trash', _id=sale._Id)}}" >Trash</a>
+            </form>
+
+        </td>
+    </tr>
+    {%endfor%}
+
+</table>
+{%endblock%}
+

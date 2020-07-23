@@ -1,9 +1,4 @@
 {% extends "base.html" %}
-
-<html lang="en">
-
-
-
 {%block content%}
 <body style="background-color: #666666;">
 
@@ -59,12 +54,9 @@
 					<div class="container-login100-form-btn">
 						{{form.submit(class="login100-form-btn")}}
 					</div>
-
-					
-
 				</form>
 
-				<div class="login100-more" style="background-image: url({{ url_for('static', filename='images/login.jpg') }}) ">
+				<div class="login100-more" style="background-image: url({{ image }}) ">
 				</div>
 			</div>
 		</div>

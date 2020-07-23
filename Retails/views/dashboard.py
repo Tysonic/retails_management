@@ -3,19 +3,19 @@ from flask import Blueprint, render_template
 
 from Retails.computations.Query import query_all, query_one
 from Retails.modules.Items import Items
-from Retails.modules.Purchases import Purchases
+from Retails.modules.Stocks import Stocks
 from Retails.modules.Sales import Sales
 from Retails.computations.Profits import profits
 from Retails.forms.sales import AddSales
 
-dashboard_blueprint = Blueprint('dashboard', __name__, template_folder='staffs/dashboard')
+dashboard_blueprint = Blueprint('dashboard', __name__, template_folder='../templates/dashboard')
 
 
 @dashboard_blueprint.route('/Cice shoppers dashboard', methods=['GET', 'POST'])
 def dashboard():
     profit = profits()
     sales = query_all(Sales)
-    purchases = query_all(Purchases)
+    purchases = query_all(Stocks)
     total_sales = 0
     total_purchases = 0
     for sale in sales:
@@ -62,9 +62,9 @@ def single_sales_details(_id):
     return render_template("single_sales_details.html", sales=sales, items=items)
 
 
-@dashboard_blueprint.route('/purchases summery')
+@dashboard_blueprint.route('/stocks summery')
 def purchases_summery():
-    purchases = query_all(Purchases)
+    purchases = query_all(Stocks)
     items = query_all(Items)
     price = {}
     quantity = {}
@@ -84,9 +84,9 @@ def purchases_summery():
     return render_template("purchases_summery.html", price=price, quantity=quantity, items=items, purchases=purchases)
 
 
-@dashboard_blueprint.route('/purchases details for <_id>')
+@dashboard_blueprint.route('/stocks details for <_id>')
 def single_purchases_details(_id):
-    purchases = Purchases.query.filter_by(item_purchased=_id).all()
+    purchases = Stocks.query.filter_by(item_purchased=_id).all()
     items = query_all(Items)
     return render_template("single_purchases_summery.html", purchases=purchases, items=items)
 

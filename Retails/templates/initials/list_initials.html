@@ -1,0 +1,13 @@
+{% extends "base.html"%}
+{% block content%}
+{%for inits in initial_items%}
+    {%for item in items%}
+            {%if inits.quantity==item.id%}
+            {{item.name}}
+            {{inits.quantity}}
+            {%endif%}
+{{inits.item_name}}
+
+    {%endfor%}
+{%endfor%}
+{%endblock%}

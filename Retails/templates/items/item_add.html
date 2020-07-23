@@ -1,0 +1,60 @@
+{% extends "base.html"%}
+{%block content%}
+<div class="jumbotron">
+  <div class="col-md-10 p-lg-10 mx-auto my-10" >
+<form method="post" enctype="multipart/form-data">
+      {{form.hidden_tag()}}
+
+  {%if error%}
+ <p> {{error}}</p>
+  {%endif%}
+  <div class="form-group row">
+    <label for="items" class="col-sm-2 p-lg-1 ">{{form.name.label}}</label>
+    <div class="col-sm-10" id = "items">
+      {{form.name(style="width:100%;height:40px; border-radius:10px")}}
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="size" class="col-sm-2 p-lg-1 ">{{form.size.label}}</label>
+    <div class="col-sm-10" id = "size">
+      {{form.size(style="width:100%;height:40px; border-radius:10px")}}
+    </div>
+  </div>
+
+    <div class="form-group row">
+    <label for="unit" class="col-sm-2 p-lg-1  col-form-label">{{form.unit_stock.label}}</label>
+    <div class="col-sm-10" id = "unit">
+     {{form.unit_stock(style="width:100%;height:40px; border-radius:10px")}}
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="brand" class="col-sm-2 p-lg-1  col-form-label">{{form.unit_sales.label}}</label>
+    <div class="col-sm-10" id = "brand">
+     {{form.unit_sales(style="width:100%;height:40px; border-radius:10px")}}
+    </div>
+  </div>
+
+    <div class="form-group row ">
+    <label for="packaging" class="col-sm-2 p-lg-1  col-form-label">{{form.sales_per_stock.label}}</label>
+    <div class="col-sm-10" id = "packaging">
+      {{form.sales_per_stock(style="width:100%;height:40px; border-radius:10px")}}
+    </div>
+
+      </div>    <div class="form-group row ">
+    <label for="category" class="col-sm-2 p-lg-1  col-form-label">{{form.category.label}}</label>
+    <div class="col-sm-10" id = "category">
+      {{form.category(style="width:100%;height:40px; border-radius:10px")}}
+    </div>
+
+      </div>
+
+<div>{{form.submit(class="btn btn-success")}}</div>
+
+
+
+</form>
+  </div>
+</div>
+{%endblock%}

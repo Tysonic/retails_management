@@ -17,29 +17,27 @@
     <tr>
         <td>Total Sales : </td>
         <td>Shs: {{total_sales}}</td>
-        <th><a href="{{url_for('Dashboard.sales_summery')}}">Details</a></th>
+        <th><a href="{{url_for('dashboard.sales_summery')}}">Details</a></th>
     </tr>
 
     <tr>
         <td>Total Purchases : </td>
         <td>Shs: {{total_purchases}}</td>
-            <th><a href="{{url_for('Dashboard.purchases_summery')}}">Details</a></th>
+            <th><a href="{{url_for('dashboard.purchases_summery')}}">Details</a></th>
     </tr>
 
 
     {%if profits >=0%}
     <tr style="background:#2d2;" >
-
         <td>Profit : </td>
         <td>Shs: {{profits}}</td>
-        <th><a href="{{url_for('Dashboard.profit_details')}}">Details</a></th>
+        <th><a href="{{url_for('dashboard.profit_details')}}">Details</a></th>
     </tr>
     {%else%}
         <tr style="background:#d88;">
-
             <td>Loss : </td>
             <td>Shs: {{loss}}</td>
-            <th><a href="{{url_for('Dashboard.profit_details')}}">Details</a></th>
+            <th><a href="{{url_for('dashboard.profit_details')}}">Details</a></th>
         </tr>
     {%endif%}
 

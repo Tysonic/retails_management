@@ -25,8 +25,8 @@
         <td>
             <form method="post" action="items.details.html">
                 <a href="{{ url_for('items.item_details', _id=item.id)}}" >Details </a>
-                <a href="{{ url_for('items.edit_item', _id=item.id)}}">Edit</a>
-                <a href="{{url_for('items.trash_item', _id=item.id)}}" >Trash</a>
+                <a href="{{ url_for('items.item_update', _id=item.id)}}">Edit</a>
+<!--                <a href="{{url_for('items.item_trash', _id=item.id)}}" >Trash</a>-->
             </form>
 
         </td>

@@ -14,6 +14,9 @@ class Items(db.Model):
     created_at = db.Column(db.DateTime)
     updated_by = db.Column(db.String)
     updated_at = db.Column(db.DateTime)
+    initials = db.relationship("InitialItems", backref='initials')
+    sales = db.relationship("Sales", backref='sales')
+    stock = db.relationship("Stocks", backref='stocks')
 
 
     # def __init__(self,name,unit_stock,unit_sales,sales_per_stock,size,category, created_at, created_by, updated_at="", updated_by=""):
