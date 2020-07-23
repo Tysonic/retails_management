@@ -5,7 +5,7 @@ from werkzeug.security import check_password_hash
 from flask_login import login_required, login_user, logout_user
 from wtforms import ValidationError
 
-from Retails import App, db
+from Retails import app, db
 from Retails.forms.accounts import UserLoginForm, UserRegitrationForm
 from Retails.modules.Accounts import Accounts
 from flask import Blueprint
