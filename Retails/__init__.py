@@ -11,8 +11,8 @@ login_manager.init_app(App)
 basedir = os.path.abspath(os.path.dirname(__file__))
 App.config["SECRET_KEY"] = "This is enterprise"
 App.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-# App.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + os.path.join(basedir, "RetailsDB")
-App.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+App.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + os.path.join(basedir, "RetailsDB")
+# App.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 db = SQLAlchemy(App)
 Migrate(App, db)
 Bootstrap(App)
