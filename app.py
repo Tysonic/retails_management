@@ -1,5 +1,5 @@
 from flask_login import login_required
-from Retails import app, login_manager
+from Retails import app, login_manager, db
 from flask import render_template
 from Retails.modules.Accounts import Accounts
 
@@ -30,6 +30,10 @@ def Internal_server_error(e):
 # def Internal_server_error(e):
 # 	return render_template("200.html",error=e)
 
+
+@app.cli.command(name='create_tables')
+def create_tables():
+    db.create_all()
 
 
 if __name__ == "__main__":
