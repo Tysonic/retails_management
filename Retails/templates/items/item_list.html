@@ -9,19 +9,21 @@
         <td>sales per stock</td>
         <td>size</td>
         <td>category</td>
+        <td>Selling Price</td>
+        <td>Buying Price</td>
 
         <td></td>
     </tr>
 {% for item in items%}
 
-    <td>{{item.name}}</td>
+    <td>{{item.name+" " +item.size}}</td>
     <td>{{item.unit_stock}}</td>
     <td>{{item.unit_sales}}</td>
     <td>{{item.sales_per_stock}}</td>
     <td>{{item.size}}</td>
     <td>{{item.category}}</td>
-
-
+    <td>{{item.selling_price}}</td>
+    <td>{{item.buying_price}}</td>
         <td>
             <form method="post" action="items.details.html">
                 <a href="{{ url_for('items.item_details', _id=item.id)}}" >Details </a>

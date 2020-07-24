@@ -39,7 +39,7 @@ def item_add():
 @items_blueprint.route("/items/list of items")
 def item_list():
     items = Items.query.all()
-    return render_template("list_items.html", items=items)
+    return render_template("item_list.html", items=items)
 
 
 @items_blueprint.route("/ details <_id>", methods=["GET", "POST"])

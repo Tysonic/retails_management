@@ -10,6 +10,8 @@ class Items(db.Model):
     sales_per_stock = db.Column(db.Integer)
     size = db.Column(db.String)
     category = db.Column(db.String)
+    selling_price = db.Column(db.Integer)
+    buying_price = db.Column(db.Integer)
     created_by = db.Column(db.String)
     created_at = db.Column(db.DateTime)
     updated_by = db.Column(db.String)
