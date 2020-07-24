@@ -1,3 +1,5 @@
+from datetime import date
+
 from flask_login import current_user
 from wtforms import ValidationError
 from Retails.computations.Query import query_one
@@ -33,7 +35,7 @@ def sale_add():
     if form.validate_on_submit():
         new_sale = Sales(item=form.item.data, quantity=form.quantity.data,
                              price=form.price.data,
-                             sold_by=current_user.username)
+                             sold_by=current_user.username, sold_at = date.today())
         db.session.add(new_sale)
         db.session.commit()
         return redirect(url_for("sales.sale_list"))
