@@ -4,7 +4,7 @@ from Retails import db
 class Items(db.Model):
     __tablename__ = "Items"
     id = db.Column(db.Integer, primary_key=True, index=True)
-    name = db.Column(db.Integer)
+    name = db.Column(db.String)
     unit_stock=db.Column(db.String)
     unit_sales = db.Column(db.String)
     sales_per_stock = db.Column(db.Integer)

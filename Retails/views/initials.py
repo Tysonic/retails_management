@@ -5,7 +5,7 @@ from Retails import db
 from Retails.computations.dropdowns import initial_items_dropdown
 from Retails.forms.initials import AddInitials
 from Retails.modules.Items import Items
-from Retails.modules.initials import  InitialCash, InitialItems
+from Retails.modules.Initials import  InitialCash, InitialItems
 from  flask import url_for, render_template
 from flask import  Blueprint
 
