@@ -9,6 +9,7 @@ def load_user(user_id):
     return Accounts.query.get(user_id)
 
 
+
 @app.route("/")
 @app.route("/home")
 @login_required
@@ -35,6 +36,12 @@ def Internal_server_error(e):
 def create_tables():
     db.create_all()
 
+
+@app.cli.command(name='create_admin')
+def create_admin():
+    admin = Accounts(email='adminadd@gmail.com',password='adminadmin', username='admin')
+    db.session.add(admin)
+    db.session.commit()
 
 if __name__ == "__main__":
     app.run(debug=True)

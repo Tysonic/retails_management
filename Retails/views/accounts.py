@@ -51,7 +51,7 @@ def logout():
     flash("logged out successfully")
     return redirect(url_for("index"))
 
-
+@login_required
 @accounts_blueprint.route("/registration page", methods=["GET", "POST"])
 def register():
     form = UserRegitrationForm()
@@ -75,7 +75,7 @@ def register():
             db.session.add(new_user)
             db.session.commit()
             flash("Registered successfully  ")
-            return redirect(url_for("accounts.login"))
+            return redirect(url_for("accounts.register"))
         return render_template("register.html", form=form)
     except Exception as e:
         return render_template("register.html", error=e, form=form)
