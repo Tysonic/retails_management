@@ -26,7 +26,7 @@ def item_add():
                           created_by=current_user.username)
         db.session.add(new_items)
         db.session.commit()
-        return redirect(url_for("items.item_list"))
+        return redirect(url_for("items.item_add"))
     return render_template("item_add.html", form=form)
 
 

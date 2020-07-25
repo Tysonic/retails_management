@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a50ef3b-aa29-4964-8152-bacab7fa91bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/versions/80ff73cde3dc_.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Retails/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/templates/shared/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/shared/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/views/accounts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/views/accounts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/items/item_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/items/item_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/views/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/views/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

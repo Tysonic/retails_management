@@ -38,7 +38,7 @@ def create_tables():
 
 
 @app.cli.command(name='create_admin')
-def create_admin():
+def add_admin():
     admin = Accounts(email='adminadd@gmail.com',password='adminadmin', username='admin')
     db.session.add(admin)
     db.session.commit()
