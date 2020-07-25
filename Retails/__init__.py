@@ -12,8 +12,8 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 app.config["SECRET_KEY"] = "This is enterprise"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 # app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + os.path.join(basedir, "RetailsDB")
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:Always Happy@localhost:5432/retailsdb"
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+# app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:Always Happy@localhost:5432/retailsdb"
 db = SQLAlchemy(app)
 Migrate(app, db)
 Bootstrap(app)
