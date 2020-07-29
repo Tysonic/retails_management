@@ -23,7 +23,8 @@ def item_add():
         new_items = Items(name=form.name.data, size=form.size.data,unit_sales = form.unit_sales.data,
                           unit_stock = form.unit_stock.data,category = form.category.data,
                           sales_per_stock = form.sales_per_stock.data,created_at=datetime.utcnow(),
-                          created_by=current_user.username)
+                          created_by=current_user.username, selling_price=form.selling_price.data,
+                          buying_price=form.buying_price.data)
         db.session.add(new_items)
         db.session.commit()
         return redirect(url_for("items.item_add"))
@@ -56,13 +57,17 @@ def item_details(_id):
 @items_blueprint.route("/items/update item details<_id>", methods=['GET', 'POST'])
 def item_update(_id):
     value = Items.query.filter_by(id=_id).first()
+
     form = AddItem(name=value.name, size=value.size, unit_sales=value.unit_sales, unit_stock=value.unit_stock,
-                   sales_per_stock=value.sales_per_stock, category = value.category)
+                   sales_per_stock=value.sales_per_stock, category = value.category,buying_price=value.buying_price,
+                   selling_price=value.selling_price)
     if form.validate_on_submit() and request.method == 'POST':
 
         Items.query.filter_by(id=_id).update(
             dict(name=form.name.data, size=form.size.data, unit_sales=form.unit_sales.data,
-                 unit_stock=form.unit_stock.data, sales_per_stock=form.sales_per_stock.data))
+                 unit_stock=form.unit_stock.data, sales_per_stock=form.sales_per_stock.data,
+                 selling_price=form.selling_price.data,buying_price=form.buying_price.data,
+                 updated_by=current_user.username,updated_at=datetime.utcnow()))
         db.session.commit()
         return redirect(url_for("items.item_list"))
     return render_template("item_update.html", form=form)

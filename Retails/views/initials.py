@@ -17,7 +17,7 @@ def add_initials_items():
     form = AddInitials()
     initial_items_dropdown(form)
     if form.validate_on_submit():
-        new = InitialItems(item= form.item_name.data, quantity = form.quantity.data, created_by = current_user.username, created_at = datetime.utcnow())
+        new = InitialItems(item= form.item_name.data, sales_quantity = form.sales_quantity.data, created_by = current_user.username, created_at = datetime.utcnow())
         db.session.add(new)
         db.session.commit()
         return redirect(url_for('initials.list_initials'))

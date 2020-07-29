@@ -2,18 +2,15 @@
 {%block content%}
 
 <table class="table table-striped table-bordered">
-    <tr><td>Item Purchased :</td><td> {{values.item_purchased}}</td></tr>
+    <tr><td>Item :</td><td> {{items.name+" "+items.size}}</td></tr>
     <tr><td>Unit Price :</td> <td>{{values.unit_price}}</td></tr>
     <tr><td>Purchase Date :</td> <td>{{values.purchase_date}}</td></tr>
     <tr><td>Purchased By :</td><td> {{values.purchased_by}}</td></tr>
-    {%if values.updated_by =="" %}
-    <tr><td>Updated By :</td><td> None</td></tr>
-    {%else%}
-    tr><td>Updated By :</td><td> {{values.updated_by}}</td></tr>
+    {%if values.updated_by !="" %}
+    <tr><td>Updated By :</td><td> {{values.updated_by}}</td></tr>
+    <tr><td>Updated At :</td><td>{{values.updated_at}}</td></tr>
     {%endif%}
 
-    <tr><td>Updated At :</td><td>{{values.updated_at}}</td></tr>
-    <tr><td>Status</td><td>active!</td></tr>
 
 </table>
 <a href="{{url_for('stocks.stock_list')}}" class="btn btn-primary float-right">Back to list</a>

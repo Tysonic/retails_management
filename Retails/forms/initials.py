@@ -4,6 +4,6 @@ from wtforms import IntegerField, SubmitField, StringField, SelectField
 
 class AddInitials(FlaskForm):
     item_name = SelectField(label="Item",coerce=int)
-    quantity  = IntegerField("Quantity")
-    cash = IntegerField("Cash")
+    sales_quantity  = IntegerField("Sales Quantity")
+    cash = IntegerField("Cash Amount")
     submit = SubmitField("Submit")

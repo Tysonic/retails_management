@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, datetime
 
 from flask_login import current_user
 from wtforms import ValidationError
@@ -51,7 +51,7 @@ def sale_update(_id):
     sales_dropdown(form)
     if form.validate_on_submit():
         sale(_id).update(dict(item_sold=form.item_sold.data, quantity_sold=form.quantity_sold.data,
-                              unit_price=form.unit_price.data))
+                              unit_price=form.unit_price.data,updated_by=current_user.username,updated_at=datetime.utcnow()))
         db.session.commit()
         message = "Values updated successfully to!"
         return redirect(url_for("sales.details", _id=values._Id, message=message))

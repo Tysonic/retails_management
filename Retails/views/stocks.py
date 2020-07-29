@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from flask_login import current_user
 
 from Retails.computations.Query import query_one
@@ -37,7 +39,8 @@ def stock_add():
 @purchase_blueprint.route('/stocks/ purchase  details <_id>')
 def stock_details(_id):
     values=Stocks.query.filter_by(id=_id).first()
-    return render_template('stock_details.html', values=values)
+    items = Items.query.filter_by(id=values.item_purchased).first()
+    return render_template('stock_details.html', values=values,items=items)
 
 
 @purchase_blueprint.route('/stocks/edit purchase <_id> ', methods = ['GET', 'POST'])
@@ -48,7 +51,7 @@ def stock_update(_id):
     if form.validate_on_submit():
         query_one(Stocks, _id).update(dict(item_purchased=form.item_purchased.data, unit_price=form.unit_price.data,
                                  quantity_purchased=form.quantity_purchased.data, updated_by= current_user.username
-                                 ,supplier=form.supplier.data))
+                                 ,supplier=form.supplier.data, updated_at=datetime.utcnow()))
         db.session.commit()
         return redirect(url_for("stocks.stock_list"))
     return render_template("stock_update.html",form=form, values=values)
