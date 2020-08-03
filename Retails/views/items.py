@@ -24,7 +24,7 @@ def item_add():
                           unit_stock = form.unit_stock.data,category = form.category.data,
                           sales_per_stock = form.sales_per_stock.data,created_at=datetime.utcnow(),
                           created_by=current_user.username, selling_price=form.selling_price.data,
-                          buying_price=form.buying_price.data)
+                          buying_price=form.buying_price.data,archived=form.archived.data)
         db.session.add(new_items)
         db.session.commit()
         return redirect(url_for("items.item_add"))
@@ -60,14 +60,14 @@ def item_update(_id):
 
     form = AddItem(name=value.name, size=value.size, unit_sales=value.unit_sales, unit_stock=value.unit_stock,
                    sales_per_stock=value.sales_per_stock, category = value.category,buying_price=value.buying_price,
-                   selling_price=value.selling_price)
+                   selling_price=value.selling_price,archived = value.archived)
     if form.validate_on_submit() and request.method == 'POST':
 
         Items.query.filter_by(id=_id).update(
             dict(name=form.name.data, size=form.size.data, unit_sales=form.unit_sales.data,
                  unit_stock=form.unit_stock.data, sales_per_stock=form.sales_per_stock.data,
                  selling_price=form.selling_price.data,buying_price=form.buying_price.data,
-                 updated_by=current_user.username,updated_at=datetime.utcnow()))
+                 archived=form.archived.data,updated_by=current_user.username,updated_at=datetime.utcnow()))
         db.session.commit()
         return redirect(url_for("items.item_list"))
     return render_template("item_update.html", form=form)

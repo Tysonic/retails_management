@@ -43,5 +43,9 @@ def add_admin():
     db.session.add(admin)
     db.session.commit()
 
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)

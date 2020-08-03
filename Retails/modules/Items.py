@@ -16,6 +16,7 @@ class Items(db.Model):
     created_at = db.Column(db.DateTime)
     updated_by = db.Column(db.String)
     updated_at = db.Column(db.DateTime)
+    archived = db.Column(db.Boolean, unique=False, default=False)
     initials = db.relationship("InitialItems", backref='initials')
     sales = db.relationship("Sales", backref='sales')
     stock = db.relationship("Stocks", backref='stocks')

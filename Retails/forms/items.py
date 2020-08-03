@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, SubmitField
+from wtforms import StringField, IntegerField, SubmitField, BooleanField
 
 
 class AddItem(FlaskForm):
@@ -11,4 +11,5 @@ class AddItem(FlaskForm):
     category = StringField('Category')
     selling_price = IntegerField("Selling Price")
     buying_price = IntegerField("Buying Price")
+    archived = BooleanField("Archived")
     submit = SubmitField("Save")
