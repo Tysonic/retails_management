@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a50ef3b-aa29-4964-8152-bacab7fa91bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/forms/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/forms/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/modules/Items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/modules/Items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/templates/items/item_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/items/item_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/templates/items/item_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/items/item_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/templates/items/item_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/items/item_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Retails/views/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/views/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-    </list>
+    <list default="true" id="9a50ef3b-aa29-4964-8152-bacab7fa91bd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
