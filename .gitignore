@@ -56,3 +56,4 @@ venv/Lib/site-packages/pip/_vendor/urllib3/packages/backports/__pycache__/
 venv/Lib/site-packages/pip/_vendor/urllib3/packages/ssl_match_hostname/__pycache__/
 venv/Lib/site-packages/pip/_vendor/urllib3/util/__pycache__/
 venv/Lib/site-packages/pip/_vendor/webencodings/__pycache__/
+migrations/
