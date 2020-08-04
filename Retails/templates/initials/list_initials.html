@@ -2,9 +2,9 @@
 {% block content%}
 {%for inits in initial_items%}
     {%for item in items%}
-            {%if inits.quantity==item.id%}
+            {%if inits.item==item.id%}
             {{item.name}}
-            {{inits.quantity}}
+            {{inits.sales_quantity}}
             {%endif%}
 {{inits.item_name}}
 
