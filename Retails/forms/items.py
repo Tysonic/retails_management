@@ -12,4 +12,5 @@ class AddItem(FlaskForm):
     selling_price = IntegerField("Selling Price")
     buying_price = IntegerField("Buying Price")
     archived = BooleanField("Archived")
+    company = StringField("Company")
     submit = SubmitField("Save")

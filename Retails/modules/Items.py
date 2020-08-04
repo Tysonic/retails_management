@@ -16,6 +16,7 @@ class Items(db.Model):
     created_at = db.Column(db.DateTime)
     updated_by = db.Column(db.String)
     updated_at = db.Column(db.DateTime)
+    company = db.Column(db.String)
     archived = db.Column(db.Boolean, unique=False, default=False)
     initials = db.relationship("InitialItems", backref='initials')
     sales = db.relationship("Sales", backref='sales')
@@ -36,4 +37,4 @@ class Items(db.Model):
 
 
     def __repr__(self):
-        return f"{self.sales_per_stock,self.unit_sales,self.category,self.name,self.size,self.id,self.unit_stock,self.created_by, self.created_at,self.updated_by, self.updated_at}"
+        return f"{self.sales_per_stock,self.unit_sales,self.category,self.name,self.size,self.id,self.unit_stock,self.created_by, self.created_at,self.updated_by, self.updated_at,self.archived,self.category}"

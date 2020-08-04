@@ -24,7 +24,7 @@ def item_add():
                           unit_stock = form.unit_stock.data,category = form.category.data,
                           sales_per_stock = form.sales_per_stock.data,created_at=datetime.utcnow(),
                           created_by=current_user.username, selling_price=form.selling_price.data,
-                          buying_price=form.buying_price.data,archived=form.archived.data)
+                          buying_price=form.buying_price.data,archived=form.archived.data,company=form.company.data)
         db.session.add(new_items)
         db.session.commit()
         return redirect(url_for("items.item_add"))

@@ -20,13 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a50ef3b-aa29-4964-8152-bacab7fa91bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Retails/RetailsDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/alembic.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/294ce8db7a90_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/a052aa55d1b8_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/forms/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/forms/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/modules/Items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/modules/Items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/templates/items/item_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/templates/items/item_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Retails/views/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Retails/views/items.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,22 +180,22 @@
       <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="466" y="160" width="434" height="487" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1595515565023" />
-    <state width="1343" height="174" key="GridCell.Tab.0.bottom" timestamp="1596484841165">
+    <state width="1343" height="174" key="GridCell.Tab.0.bottom" timestamp="1596486695738">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1343" height="174" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1596484841165" />
-    <state width="1343" height="174" key="GridCell.Tab.0.center" timestamp="1596484841164">
+    <state width="1343" height="174" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1596486695738" />
+    <state width="1343" height="174" key="GridCell.Tab.0.center" timestamp="1596486695737">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1343" height="174" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1596484841164" />
-    <state width="1343" height="174" key="GridCell.Tab.0.left" timestamp="1596484841164">
+    <state width="1343" height="174" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1596486695737" />
+    <state width="1343" height="174" key="GridCell.Tab.0.left" timestamp="1596486695736">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1343" height="174" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1596484841164" />
-    <state width="1343" height="174" key="GridCell.Tab.0.right" timestamp="1596484841165">
+    <state width="1343" height="174" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1596486695736" />
+    <state width="1343" height="174" key="GridCell.Tab.0.right" timestamp="1596486695737">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1343" height="174" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1596484841165" />
+    <state width="1343" height="174" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1596486695737" />
     <state x="172" y="35" width="1022" height="733" key="SettingsEditor" timestamp="1595519875899">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
