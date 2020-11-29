@@ -68,7 +68,6 @@ def register():
             if not re.search(r"[\d]+", form.password.data):
                 raise ValidationError("This password must contain at least 1 digit")
             if not re.search(r"[A-Z]+", form.password.data):
-                print(form.password.data)
                 raise ValidationError("This password must contain at least 1 uppercase character")
 
             new_user = Accounts(username=form.username.data, email=form.email.data, password=form.password.data)

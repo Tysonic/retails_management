@@ -14,7 +14,10 @@ def load_user(user_id):
 @app.route("/home")
 @login_required
 def index():
-    return render_template("index.html")
+    image1 = 'images/electro1.jpg'
+    image2 = 'images/images.jpg'
+    image3 = 'images/electro2.jpg'
+    return render_template("index.html", image1 = image1, image2=image2, image3 = image3)
 
 @app.errorhandler(404)
 def page_not_found(e):

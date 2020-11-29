@@ -1,4 +1,4 @@
-#!/home/tysonic/PycharmProjects/Retail_Management/venv/bin/python
+#!/home/tysonic/Projects/retails_management/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

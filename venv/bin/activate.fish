@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/tysonic/PycharmProjects/Retail_Management/venv"
+set -gx VIRTUAL_ENV "/home/tysonic/Projects/retails_management/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
